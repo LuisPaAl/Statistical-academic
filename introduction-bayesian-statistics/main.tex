@@ -541,9 +541,41 @@ Along the new age of cosmology, observational experiments have been very helpful
 
 \subsection{A first example in parameter inference for Cosmology}
 
-The simplest way to understand how all this concepts can be useful in cosmology is applying them to an example. We start considering the typical  
+The simplest way to understand how all this concepts can be useful in cosmology is applying them to an example. We consider the typical example in cosmology for parameter inference, which is, we estimate the value of the Hubble parameter $H_0$ at our present time and the density of matter in the Universe $\Omega_m$, considering a $\Lambda CDM$ cosmology. In this section we present the results of a complete work session. We wrote our own Python code using the PyMC Python's module [ref]. For interested readers, the code can be seen in appendix [B]. Notice that this can be used not only in cosmology but also in whatever model that you most prefer; what you need to do in order to prove a new model is only specify it in "pm.model()". 
 
-\subsection{Cosmological codes}
+\subsubsection{What is the model and the theory?}
+
+The standard $\Lambda CDM$ cosmology considers a flat Universe which contains around $\sim 31\%$ of ordinary matter plus dark matter and $\sim 68\%$ of dark energy. In this $\Lambda CDM$ model it is consider that the matter component of the universe follows an equation of state given by $p=0$, while the dark energy is a cosmological constant, i.e. $p=-\rho$. In this way, considering this components, the Universe's dynamics would be given by the Friedmann equation
+\begin{equation}
+H^2\equiv\left(\frac{\dot a}{a}\right)=H_0^2[\Omega_m(1+z)^3+\Omega_{\Lambda}]
+\end{equation}
+and the acceleration equation\footnote{We do not show this equation because it is not necessary for our estimation and we do not want to confuse the reader.}. Here $H$ is the Hubble parameter, $H_0$ corresponds with the Hubble parameter at present, $\Omega_m$ and $\Omega_\Lambda$ is the matter and dark energy densities at our epoch and follows the constraining condition $\Omega_m+\Omega_\Lambda=1$, and $z$ is the redshift which is associated with a time parameter; $z=0$ is at present. Notice that thanks to the constraining condition we can rewrite $\Omega_\Lambda=1-\Omega_m$ and then we can reduce by one the number of parameters in the model. 
+\subsubsection{The observables and the data}
+
+It is possible to measure $H(z)$ by using what it is known as the \textit{cosmic chronometer} approach \cite{Hz}. We use the data reported in \cite{Hzdata} as our data for our estimation. A plot of them can be seen in figure \ref{HzData}.
+
+\begin{minipage}{\textwidth}
+\centering
+\includegraphics[height=8cm]{Hzdata.png}
+\captionof{figure}{\footnotesize{Multiple MCMC. We calculate 5 Markov chains to estimate convergence of our chains.}}
+\label{HzData}
+\end{minipage}
+
+\subsubsection{Inferring the free parameters of the model}
+
+Now, giving a model and a set of data, we are ready to apply what we have learned until now. First at all, notice that the only free parameters in our model are $\Omega_m$ (or $\Omega_\Lambda$) and $H_0$. We suppose that we don't know anything about our free parameters, in such case a good prior for them is a Uniform distribution. However, in order to simplify our life we consider that we know something about the limit values for both parameters,  say: $\Omega_m\in [0.1,1]$ and $H_0\in [10,100]$. In this way we have as our priors
+\begin{subequations}
+\begin{equation}
+\Omega_m\sim U[0.1,1]
+\end{equation}
+\begin{equation}
+H_0\sim U[10,100]
+\end{equation}
+\end{subequations} 
+\subsection{What is next?}
+
+\textcolor{red}{Una vez de que ya entedimos los procedimientos para la inferencia de par\'ametros, hablar de que el siguiente paso es saber que hay varios c\'odigos que ya hacen todo lo que vimos (tanto la cosmolog\'ia, como la estad\'istica) y que es mejor aprender a moverles que andar haciendo nuestro propio código (quiz\'as)}
+\subsubsection{Cosmological codes}
 
 Now a days there are a lot of cosmological Boltzmann codes that are free on the web and can help us to prove our cosmological models. The most popular of them are: CMBFAST \cite{cmbfast1}, CMBEASY \cite{cmbeasy}, CAMB \cite{camb1} (some useful references for CAMB: \cite{camb2,camb3,camb4}) and CLASS \cite{class1} (a useful reference for CLASS: \cite{mont1}). All of them are used for calculating the linear CMB anisotropy spectra based on integration over the sources along the photon past light cone.
 
@@ -559,23 +591,18 @@ Now a days there are a lot of cosmological Boltzmann codes that are free on the 
 
 %As can be seen in the wave-page of CLASS \cite{class1}, the purpose of CLASS is to simulate the evolution of linear perturbations in the universe and to compute CMB and large scale structure observables. Its name also comes from the fact that it is written in object-oriented style mimicking the notion of class. The code was written in the C language. It can be downloaded in \cite{class1} and some useful references for the use of the code can be found in \cite{mont1}.
 
-\subsection{Statistical codes}
+\subsubsection{Statistical codes}
 
 Once our cosmological model is established we need a statistical code which can help us to estimate the free parameters of our model. A first idea could be continuing programing our own MCMC code, but, as it is expected, while the number of free parameters of our model increases, it is more challenging to construct an efficient code. Fortunately there are several MCMC codes free to download on-line that can make this homework taking as our theory the cosmological codes showed above. In this section we review the most common of them.
 
-\subsubsection{Monte Python}
-
+\textit{Monte Python}.-
 Monte Python is a Monte Carlo code for Cosmological Parameter extraction  that can be downloaded in \cite{MP1}. It contains likelihood codes of most recent experiments, and interfaces with the Boltzmann code Class for computing the cosmological observables.
 
 The code contains several sampling methods available: Metropolis-Hastings, Nested Sampling (through MultiNest), EMCEE (through CosmoHammer) and Importance Sampling. If you are interested to work with this parameter inference code you can get help in \cite{mont1} and \cite{MP2}.
 
-\subsubsection{CosmoMC}
+\textit{CosmoMC}.- CosmoMC (to download \cite{cosmomc}) is a fortran 2003 MCMC engine for exploring cosmological parameter space. It contains Monte Carlo samples and inportance sampling. It containg likelihoods of most recent experiments, and interfaces with CAMB.
 
-CosmoMC (to download \cite{cosmomc}) is a fortran 2003 MCMC engine for exploring cosmological parameter space. It contains Monte Carlo samples and inportance sampling. It containg likelihoods of most recent experiments, and interfaces with CAMB.
-
-\subsubsection{SimpleMC}
-
-SimpleMC is a MCMC code for cosmological parameter estimation where only expansion history matters. It was written by Anže Slosar and Jose Vazquez and can be downloaded on \cite{simplemc}
+\textit{SimpleMC}.- SimpleMC is a MCMC code for cosmological parameter estimation where only expansion history matters. It was written by Anže Slosar and Jose Vazquez and can be downloaded on \cite{simplemc}
 
 \subsection{Some examples}
 \textcolor{red}{Examples of cosmology}
@@ -656,6 +683,15 @@ abrese,  J.  E.  Carlstrom,  et  al.,  ArXiv  e-prints  (2013),
 \bibitem{MP2}Benjamin Audren, \textit{Monte Python documentation, Release 2.2.0}; October 21, 2015
 \bibitem{cosmomc}$http://cosmologist.info/cosmomc/$	
 \bibitem{simplemc}$https://github.com/ja-vazquez/SimpleMC$
+%
+%
+%
+%
+%
+%
+\bibitem{Hz}R. Jimenez and A. Loeb, “Constraining Cosmological Parameters Based on Relative Galaxy Ages,”
+ApJ, vol. 573, pp. 37–42, July 2002.
+\bibitem{Hzdata}Michele Moresco, Raul Jimenez, Licia Verdec, Andrea Cimatti, Lucia Pozzetti, Claudia Maraston, \textit{Constraining the time evolution of dark energy, curvature and neutrino properties with cosmic chronometers}, Journal of Cosmology and Astroparticle Physics, (2016), arXiv:1604.00183v1 [astro-ph.CO]
 
 
 \end{thebibliography}

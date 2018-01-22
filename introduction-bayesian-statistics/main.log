@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.14)  21 JAN 2018 19:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.14)  22 JAN 2018 00:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -391,7 +391,11 @@ Class revtex4-1 Info: multicol was not loaded (OK!) on input line 29.
 LaTeX Warning: Unused global option(s):
     [usenatbib].
 
-No file main.aux.
+(./main.aux
+
+LaTeX Warning: Label `ex4' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
@@ -408,7 +412,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count122
 \scratchdimen=\dimen126
@@ -450,6 +454,8 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 29.
 LaTeX Info: Redefining \pageref on input line 29.
 LaTeX Info: Redefining \nameref on input line 29.
+
+(./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
@@ -468,42 +474,15 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 54.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-
-Package natbib Warning: Citation `debate' on page 2 undefined on input line 58.
-
-
 Missing character: There is no √ in font cmr10!
 Missing character: There is no ° in font cmr10!
-
-Package natbib Warning: Citation `bayeslecture' on page 2 undefined on input li
-ne 68.
-
-
-Package natbib Warning: Citation `AlanH' on page 2 undefined on input line 68.
-
-
-Package natbib Warning: Citation `RobT' on page 2 undefined on input line 68.
-
-
-Package natbib Warning: Citation `LiV' on page 2 undefined on input line 68.
-
-
-Package natbib Warning: Citation `RobTr' on page 2 undefined on input line 68.
-
-[2]
+ [2]
 Underfull \hbox (badness 10000) in paragraph at lines 88--92
 
  []
 
 
-Package natbib Warning: Citation `bayeslecture' on page 3 undefined on input li
-ne 113.
-
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Reference `table:1' on page 3 undefined on input line 138.
 
 [3]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 142.
@@ -513,34 +492,8 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 142.
-
-
-LaTeX Warning: Reference `rules' on page 4 undefined on input line 166.
-
-
-LaTeX Warning: Reference `rule4' on page 4 undefined on input line 166.
-
-[4]
-
-LaTeX Warning: Reference `BayesT' on page 5 undefined on input line 183.
-
-[5]
-
-LaTeX Warning: Reference `ex2' on page 6 undefined on input line 216.
-
-
-LaTeX Warning: Reference `ex4' on page 6 undefined on input line 216.
-
-
-LaTeX Warning: Reference `PD' on page 6 undefined on input line 216.
-
-
-LaTeX Warning: Reference `coin0' on page 6 undefined on input line 226.
-
-
-LaTeX Warning: Reference `ex4' on page 6 undefined on input line 226.
-
-<coin0.png, id=74, 717.68124pt x 525.965pt>
+ [4] [5]
+<coin0.png, id=216, 717.68124pt x 525.965pt>
 File: coin0.png Graphic file (type png)
  <use coin0.png>
 Package pdftex.def Info: coin0.png used on input line 229.
@@ -552,15 +505,6 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `ex' on page 6 undefined on input line 234.
-
-
-LaTeX Warning: Reference `ex1' on page 6 undefined on input line 234.
-
-
-LaTeX Warning: Reference `ex4' on page 6 undefined on input line 234.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 225--235
 
  []
@@ -570,26 +514,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 225--235
 
  []
 
-
-LaTeX Warning: Reference `coin1' on page 6 undefined on input line 243.
-
-
-Package natbib Warning: Citation `observ' on page 6 undefined on input line 243
-.
-
-
-LaTeX Warning: Reference `coin1' on page 6 undefined on input line 243.
-
-
-LaTeX Warning: Reference `coin1' on page 6 undefined on input line 243.
-
-
-LaTeX Warning: Reference `coin1' on page 6 undefined on input line 243.
-
-
-LaTeX Warning: Reference `coin1' on page 6 undefined on input line 243.
-
-<coin1.png, id=76, 786.94pt x 666.49pt>
+<coin1.png, id=227, 786.94pt x 666.49pt>
 File: coin1.png Graphic file (type png)
  <use coin1.png>
 Package pdftex.def Info: coin1.png used on input line 246.
@@ -615,38 +540,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 243--251
 
  []
 
-[6 <./coin0.png>]
-
-Package natbib Warning: Citation `AlanH' on page 7 undefined on input line 256.
-
-
-[7 <./coin1.png>]
-
-Package natbib Warning: Citation `LiV' on page 8 undefined on input line 291.
-
-
-Package natbib Warning: Citation `LiV' on page 8 undefined on input line 291.
-
-
-Package natbib Warning: Citation `RobT' on page 8 undefined on input line 294.
-
-
-LaTeX Warning: Reference `GLik' on page 8 undefined on input line 294.
-
-[8]
-
-LaTeX Warning: Reference `BayesTI' on page 9 undefined on input line 302.
-
-
-LaTeX Warning: Reference `gausian1' on page 9 undefined on input line 310.
-
-<g1.png, id=113, 497.86pt x 276.03125pt>
+[6 <./coin0.png>] [7 <./coin1.png>] [8]
+<g1.png, id=269, 497.86pt x 276.03125pt>
 File: g1.png Graphic file (type png)
  <use g1.png>
 Package pdftex.def Info: g1.png used on input line 313.
 (pdftex.def)             Requested size: 230.94034pt x 128.0374pt.
 
-<g2.png, id=114, 506.89375pt x 280.04625pt>
+<g2.png, id=270, 506.89375pt x 280.04625pt>
 File: g2.png Graphic file (type png)
  <use g2.png>
 Package pdftex.def Info: g2.png used on input line 314.
@@ -657,80 +558,8 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 315.
 See the caption package documentation for explanation.
 
-
-Package natbib Warning: Citation `RobT' on page 9 undefined on input line 315.
-
-
-Package natbib Warning: Citation `RobT' on page 9 undefined on input line 315.
-
-
-LaTeX Warning: Reference `LikG' on page 9 undefined on input line 320.
-
-
-Package natbib Warning: Citation `NR' on page 9 undefined on input line 326.
-
-[9 <./g1.png> <./g2.png>]
-
-LaTeX Warning: Reference `LikG' on page 10 undefined on input line 342.
-
-
-Package natbib Warning: Citation `LiV' on page 10 undefined on input line 342.
-
-
-LaTeX Warning: Reference `tableerrors' on page 10 undefined on input line 344.
-
-[10]
-
-Package natbib Warning: Citation `Fisher' on page 11 undefined on input line 37
-8.
-
-
-Package natbib Warning: Citation `LiV' on page 11 undefined on input line 378.
-
-
-LaTeX Warning: Reference `rule4' on page 11 undefined on input line 392.
-
-
-LaTeX Warning: Reference `rao' on page 11 undefined on input line 411.
-
-[11]
-
-LaTeX Warning: Reference `BayesT' on page 12 undefined on input line 429.
-
-
-Package natbib Warning: Citation `mcmc1' on page 12 undefined on input line 429
-.
-
-
-Package natbib Warning: Citation `mcmc2' on page 12 undefined on input line 429
-.
-
-
-Package natbib Warning: Citation `mcmc3' on page 12 undefined on input line 429
-.
-
-
-Package natbib Warning: Citation `mcmc4' on page 12 undefined on input line 429
-.
-
-
-Package natbib Warning: Citation `metr' on page 12 undefined on input line 450.
-
-
-[12]
-
-LaTeX Warning: Reference `ex4' on page 13 undefined on input line 470.
-
-
-LaTeX Warning: Reference `ex2' on page 13 undefined on input line 472.
-
-
-LaTeX Warning: Reference `ex3' on page 13 undefined on input line 472.
-
-
-LaTeX Warning: Reference `posteriord' on page 13 undefined on input line 472.
-
-<posterior.png, id=164, 717.68124pt x 525.965pt>
+[9 <./g1.png> <./g2.png>] [10] [11] [12]
+<posterior.png, id=340, 717.68124pt x 525.965pt>
 File: posterior.png Graphic file (type png)
  <use posterior.png>
 Package pdftex.def Info: posterior.png used on input line 477.
@@ -751,10 +580,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 475--482
 
  []
 
-
-LaTeX Warning: Reference `chain1' on page 13 undefined on input line 483.
-
-[13 <./posterior.png>] <chain1.png, id=181, 471.7625pt x 316.18124pt>
+[13 <./posterior.png>] <chain1.png, id=357, 471.7625pt x 316.18124pt>
 File: chain1.png Graphic file (type png)
 
 <use chain1.png>
@@ -787,17 +613,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 497--498
  []
 
 
-LaTeX Warning: Reference `chain1' on page 14 undefined on input line 499.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 499--500
 
  []
 
-
-LaTeX Warning: Reference `chain2' on page 14 undefined on input line 503.
-
-[14 <./chain1.png>] <chain2.png, id=188, 382.42876pt x 252.945pt>
+[14 <./chain1.png>] <chain2.png, id=366, 382.42876pt x 252.945pt>
 File: chain2.png Graphic file (type png)
 
 <use chain2.png>
@@ -815,136 +635,80 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 505--511
  []
 
 
-Package natbib Warning: Citation `LicV2' on page 15 undefined on input line 513
-.
-
-
-Package natbib Warning: Citation `AlanH' on page 15 undefined on input line 513
-.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 532--535
 
  []
 
-
-Package natbib Warning: Citation `gibbs1' on page 15 undefined on input line 53
-6.
-
-
-Package natbib Warning: Citation `gibbs2' on page 15 undefined on input line 53
-6.
-
-
-Package natbib Warning: Citation `hamiltonian1' on page 15 undefined on input l
-ine 536.
-
-
-Package natbib Warning: Citation `Hamiltonian2' on page 15 undefined on input l
-ine 536.
-
-
-Package natbib Warning: Citation `importance' on page 15 undefined on input lin
-e 536.
-
-
-Package natbib Warning: Citation `cmbex' on page 15 undefined on input line 540
-.
-
-
-Package natbib Warning: Citation `observ' on page 15 undefined on input line 54
-0.
-
 [15 <./chain2.png>]
 
-Package natbib Warning: Citation `cmbfast1' on page 16 undefined on input line 
-548.
+Package natbib Warning: Citation `Hz' on page 16 undefined on input line 555.
 
 
-Package natbib Warning: Citation `cmbeasy' on page 16 undefined on input line 5
-48.
+Package natbib Warning: Citation `Hzdata' on page 16 undefined on input line 55
+5.
 
 
-Package natbib Warning: Citation `camb1' on page 16 undefined on input line 548
-.
+LaTeX Warning: Reference `HzData' on page 16 undefined on input line 555.
+
+<Hzdata.png, id=393, 505.89pt x 373.8768pt>
+File: Hzdata.png Graphic file (type png)
+ <use Hzdata.png>
+Package pdftex.def Info: Hzdata.png used on input line 559.
+(pdftex.def)             Requested size: 307.99034pt x 227.62204pt.
 
 
-Package natbib Warning: Citation `camb2' on page 16 undefined on input line 548
-.
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 560.
+See the caption package documentation for explanation.
 
 
-Package natbib Warning: Citation `camb3' on page 16 undefined on input line 548
-.
+Overfull \hbox (10.0pt too wide) in paragraph at lines 557--563
+[]$[]$ 
+ []
 
-
-Package natbib Warning: Citation `camb4' on page 16 undefined on input line 548
-.
-
-
-Package natbib Warning: Citation `class1' on page 16 undefined on input line 54
-8.
-
-
-Package natbib Warning: Citation `mont1' on page 16 undefined on input line 548
-.
-
-
-Package natbib Warning: Citation `MP1' on page 16 undefined on input line 568.
-
-
-Package natbib Warning: Citation `mont1' on page 16 undefined on input line 570
-.
-
-
-Package natbib Warning: Citation `MP2' on page 16 undefined on input line 570.
-
-
-Package natbib Warning: Citation `cosmomc' on page 16 undefined on input line 5
-74.
-
+[16]
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ≥ in font cmr10!
+ [17 <./Hzdata.png>]
 Missing character: There is no ≈ in font cmr10!
 Missing character: There is no æ in font cmr10!
-
-Package natbib Warning: Citation `simplemc' on page 16 undefined on input line 
-578.
-
-[16] <c1.png, id=210, 801.99625pt x 84.315pt>
+ <c1.png, id=429, 801.99625pt x 84.315pt>
 File: c1.png Graphic file (type png)
  <use c1.png>
-Package pdftex.def Info: c1.png used on input line 589.
+Package pdftex.def Info: c1.png used on input line 616.
 (pdftex.def)             Requested size: 541.28738pt x 56.9055pt.
 
-Overfull \hbox (31.28738pt too wide) in paragraph at lines 589--590
+Overfull \hbox (31.28738pt too wide) in paragraph at lines 616--617
  [][] 
  []
 
-<c2.png, id=211, 803.0pt x 98.3675pt>
+<c2.png, id=430, 803.0pt x 98.3675pt>
 File: c2.png Graphic file (type png)
  <use c2.png>
-Package pdftex.def Info: c2.png used on input line 592.
+Package pdftex.def Info: c2.png used on input line 619.
 (pdftex.def)             Requested size: 543.26366pt x 66.55112pt.
 
-Overfull \hbox (33.26366pt too wide) in paragraph at lines 592--593
+Overfull \hbox (33.26366pt too wide) in paragraph at lines 619--620
  [][] 
  []
 
-<c3.png, id=212, 800.9925pt x 371.3875pt>
+<c3.png, id=431, 800.9925pt x 371.3875pt>
 File: c3.png Graphic file (type png)
  <use c3.png>
-Package pdftex.def Info: c3.png used on input line 595.
+Package pdftex.def Info: c3.png used on input line 622.
 (pdftex.def)             Requested size: 543.10326pt x 251.80705pt.
 
-Overfull \hbox (33.10326pt too wide) in paragraph at lines 595--596
+Overfull \hbox (33.10326pt too wide) in paragraph at lines 622--623
  [][] 
  []
 
-<c4.png, id=213, 801.99625pt x 219.82124pt>
+<c4.png, id=432, 801.99625pt x 219.82124pt>
 File: c4.png Graphic file (type png)
  <use c4.png>
-Package pdftex.def Info: c4.png used on input line 598.
+Package pdftex.def Info: c4.png used on input line 625.
 (pdftex.def)             Requested size: 540.84685pt x 148.23904pt.
 
-Overfull \hbox (30.84685pt too wide) in paragraph at lines 598--599
+Overfull \hbox (30.84685pt too wide) in paragraph at lines 625--626
  [][] 
  []
 
@@ -952,14 +716,14 @@ Overfull \hbox (30.84685pt too wide) in paragraph at lines 598--599
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Reference `LastBibItem' on page 17 undefined on input line 601.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[17 <./c1.png> <./c2.png> <./c3.png>]
+[18 <./c1.png> <./c2.png>]
 Missing character: There is no ‚ in font cmr9!
 Missing character: There is no Ä in font cmr9!
 Missing character: There is no ì in font cmr9!
 
-Underfull \hbox (badness 1221) in paragraph at lines 627--629
+Underfull \hbox (badness 1424) in paragraph at lines 654--656
 []\OT1/cmr/m/n/9 Verde L., as-troph/0712.3028 (2007) \OT1/cmr/m/it/9 http://www
 .behind-the-enemy-lines.com/2008/01/are-you-bayesian-or-frequentist-
  []
@@ -973,20 +737,31 @@ Missing character: There is no ì in font cmr9!
 Missing character: There is no ‚ in font cmr9!
 Missing character: There is no Ä in font cmr9!
 Missing character: There is no ì in font cmr9!
+[19 <./c3.png> <./c4.png>]
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ú in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ù in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
+
 No file main.bbl.
 
 Package natbib Warning: There were undefined citations.
 
-[18 <./c4.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 662.
+[20]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 698.
  (./main.aux
 
 Package natbib Warning: Citation(s) may have changed.
 (natbib)                Rerun to get citations correct.
 
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 662.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 662.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 698.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 698.
 
 
 Package rerunfilecheck Warning: File `main.out' has changed.
@@ -994,52 +769,53 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  754CBB40F6D96071D1D5014FE9ADAA60;2373.
+(rerunfilecheck)             Before: 754CBB40F6D96071D1D5014FE9ADAA60;2373
+(rerunfilecheck)             After:  41DA9E3B946D018C3AA999854230F89E;2511.
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right .
-
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 9496 strings out of 493029
- 136806 string characters out of 6136234
- 243266 words of memory out of 5000000
- 12751 multiletter control sequences out of 15000+600000
+ 9562 strings out of 493029
+ 137599 string characters out of 6136234
+ 245000 words of memory out of 5000000
+ 12798 multiletter control sequences out of 15000+600000
  17166 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,9n,41p,2001b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on main.pdf (18 pages, 634016 bytes).
+ 36i,9n,44p,2004b,589s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{section*.38} has been referenced but does not exi
+st, replaced by a fixed one
+
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
+i9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on main.pdf (20 pages, 704286 bytes).
 PDF statistics:
- 386 PDF objects out of 1000 (max. 8388607)
- 321 compressed objects within 4 object streams
- 158 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 583 PDF objects out of 1000 (max. 8388607)
+ 511 compressed objects within 6 object streams
+ 170 named destinations out of 1000 (max. 500000)
+ 317 words of extra memory for PDF output out of 10000 (max. 10000000)
 
