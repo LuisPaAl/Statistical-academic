@@ -1,0 +1,1162 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.14)  30 JAN 2018 04:39
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/revtex/revtex4-1.cls
+Document Class: revtex4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revt
+ex4/ for documentation)
+ Copyright (c) 2009 The American Physical Society.
+ mailto:revtex@aps.org
+ Licensed under the LPPL:
+http://www.ctan.org/tex-archive/macros/latex/base/lppl.txt
+ Arthur Ogawa <arthur_ogawa at sbcglobal dot net>
+ Based on work by David Carlisle <david at dcarlisle.demon.co.uk>.
+ltxutil[2010/07/25/20:33:00 4.1r utilities package (portions licensed from W. E
+. Baxter web at superscript.com)]
+LaTeX Info: Redefining \@centercr on input line 308.
+Class revtex4-1 Info: Repairing broken LaTeX eqnarray on input line 358.
+\eqncolsep=\skip41
+Class revtex4-1 Info: Repairing hyperref-unfriendly LaTeX definition of \mpfoot
+note on input line 433.
+Class revtex4-1 Info: Repairing broken LateX \@sect on input line 755.
+\intertabularlinepenalty=\count79
+\@tbpen=\count80
+\@arstrutbox@hline=\box26
+Class revtex4-1 Info: Repairing broken LaTeX \@xbitor on input line 1786.
+Class revtex4-1 Info: Making \typeout \long on input line 2046.
+ltxfront[2010/07/25/20:33:00 4.1r frontmatter package (AO,DPC)]
+\c@affil=\count81
+\c@collab=\count82
+\absbox=\box27
+ltxgrid[2010/07/25/20:33:00 4.1r page grid package (portions licensed from W. E
+. Baxter web at superscript.com)]
+\c@linecount=\count83
+\output@latex=\toks14
+\box@size@1=\box28
+\box@size@2=\box29
+\@protection@box=\box30
+\@topmark@saved=\toks15
+\footins@saved=\box31
+\footins@recovered=\box32
+\column@recovered=\box33
+\pagesofar=\box34
+\footsofar=\box35
+\pagegrid@col=\count84
+Class revtex4-1 Info: Overriding \@vspace, \@vspacer, \@no@pgbk, \@newline, and
+ \\  on input line 5578.
+\c@part=\count85
+\c@section=\count86
+\c@subsection=\count87
+\c@subsubsection=\count88
+\c@paragraph=\count89
+\c@subparagraph=\count90
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count91
+\fbox@1=\box36
+\c@table=\count92
+\fbox@2=\box37
+\c@video=\count93
+\fbox@4=\box38
+\@bibdataout=\write3
+\widetext@top=\box39
+\widetext@bot=\box40
+Class revtex4-1 Info: Selecting society aps on input line 7542.
+(/usr/share/texlive/texmf-dist/tex/latex/revtex/aps4-1.rtx
+File: aps4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ for docu
+mentation)
+Class revtex4-1 Info: RevTeX society APS selected on input line 31.
+)
+Class revtex4-1 Info: Selecting journal prl on input line 7544.
+Class revtex4-1 Info: APS journal PRL selected on input line 7545.
+
+
+Class revtex4-1 Warning: No type size specified, using default 10.
+
+(/usr/share/texlive/texmf-dist/tex/latex/revtex/aps10pt4-1.rtx
+File: aps10pt4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ for 
+documentation)
+Class revtex4-1 Info: RevTeX pointsize 10pt selected on input line 30.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
+Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip44
+\bibsep=\skip45
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count94
+)
+Class revtex4-1 Info: Repairing natbib's \BibitemShut on input line 7549.
+
+(/usr/share/texlive/texmf-dist/tex/latex/revtex/revsymb4-1.sty
+Package: revsymb4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ f
+or documentation)
+LaTeX Info: Redefining \REV@mathfrak on input line 119.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 95.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count95
+))
+\Gin@req@height=\dimen102
+\Gin@req@width=\dimen103
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/dcolumn.sty
+Package: dcolumn 2014/10/28 v1.06 decimal alignment package (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen104
+\extrarowheight=\dimen105
+\NC@list=\toks17
+\extratabsurround=\skip46
+\backup@length=\skip47
+))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2014/10/28 v1.1c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup4
+\symboldletters=\mathgroup5
+\symboldsymbols=\mathgroup6
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 207.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/03/03 v2.15a AMS math features
+\@mathmargin=\skip48
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen106
+)
+LaTeX Info: Redefining \text on input line 28.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+LaTeX Info: Redefining \boldsymbol on input line 28.
+\pmbraise@=\dimen107
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count96
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count97
+\leftroot@=\count98
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count99
+\DOTSCASE@=\count100
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box41
+\strutbox@=\box42
+\big@size=\dimen108
+LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
+\macc@depth=\count101
+\c@MaxMatrixCols=\count102
+\dotsspace@=\muskip11
+\c@parentequation=\count103
+\dspbrk@lvl=\count104
+\tag@help=\toks19
+\row@=\count105
+\column@=\count106
+\maxfields@=\count107
+\andhelp@=\toks20
+\eqnshift@=\dimen109
+\alignsep@=\dimen110
+\tagshift@=\dimen111
+\tagwidth@=\dimen112
+\totwidth@=\dimen113
+\lineht@=\dimen114
+\@envbody=\toks21
+\multlinegap=\skip49
+\multlinetaggap=\skip50
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2735.
+LaTeX Info: Redefining \] on input line 2736.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup7
+\symAMSb=\mathgroup8
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+LaTeX Info: Redefining \frak on input line 111.
+LaTeX Info: Redefining \Bbb on input line 113.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen115
+\Hy@linkcounter=\count108
+\Hy@pagecounter=\count109
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count110
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+LaTeX Info: Redefining \href on input line 4952.
+\c@Hy@tempcnt=\count111
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen116
+\Fld@menulength=\count112
+\Field@Width=\dimen117
+\Fld@charsize=\dimen118
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count113
+\c@Item=\count114
+\c@Hfootnote=\count115
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count116
+\c@bookmark@seq@number=\count117
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip51
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/01/03 v1.1b Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 143.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen119
+\captionmargin@=\dimen120
+\captionwidth=\dimen121
+\caption@tempdima=\dimen122
+\caption@indent=\dimen123
+\caption@parindent=\dimen124
+\caption@hangindent=\dimen125
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\par \vskip \abovecapti
+onskip \begingroup \small \rmfamily \sbox \@tempboxa {\let \\\heading@cr \@make
+@capt@title {#1}{#2}}\@ifdim {\wd \@tempboxa >\hsize }{\begingroup \samepage \f
+lushing \let \footnote \@footnotemark@gobble \@make@capt@title {#1}{#2}\par \en
+dgroup }{\global \@minipagefalse \hb@xt@ \hsize {\hfil \unhbox \@tempboxa \hfil
+ }}\endgroup \vskip \belowcaptionskip .
+\c@ContinuedFloat=\count118
+Package caption Info: hyperref package is loaded.
+) (/usr/share/texlive/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count119
+\c@@ppsavesec=\count120
+\c@@ppsaveapp=\count121
+)
+Class revtex4-1 Info: Patching array package. on input line 29.
+Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 29.
+
+Class revtex4-1 Info: cite was not loaded (OK!) on input line 29.
+Class revtex4-1 Info: mcite was not loaded (OK!) on input line 29.
+Class revtex4-1 Info: multicol was not loaded (OK!) on input line 29.
+
+
+LaTeX Warning: Unused global option(s):
+    [usenatbib].
+
+No file main.aux.
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count122
+\scratchdimen=\dimen126
+\scratchbox=\box43
+\nofMPsegments=\count123
+\nofMParguments=\count124
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count125
+\MPscratchDim=\dimen127
+\MPnumerator=\count126
+\makeMPintoPDFobject=\count127
+\everyMPtoPDFconversion=\toks24
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\AtBeginShipoutBox=\box44
+Package hyperref Info: Link coloring OFF on input line 29.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count128
+)
+LaTeX Info: Redefining \ref on input line 29.
+LaTeX Info: Redefining \pageref on input line 29.
+LaTeX Info: Redefining \nameref on input line 29.
+\@outlinefile=\write4
+\openout4 = `main.out'.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+Class revtex4-1 Info: Taking \maketitle back from hyperref on input line 29.
+\openout3 = `mainNotes.bib'.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 54.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 54.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+
+Package natbib Warning: Citation `debate' on page 2 undefined on input line 58.
+
+
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ° in font cmr10!
+
+Package natbib Warning: Citation `bayeslecture' on page 2 undefined on input li
+ne 68.
+
+
+Package natbib Warning: Citation `AlanH' on page 2 undefined on input line 68.
+
+
+Package natbib Warning: Citation `RobT' on page 2 undefined on input line 68.
+
+
+Package natbib Warning: Citation `LiV' on page 2 undefined on input line 68.
+
+
+Package natbib Warning: Citation `RobTr' on page 2 undefined on input line 68.
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 88--92
+
+ []
+
+
+Package natbib Warning: Citation `bayeslecture' on page 3 undefined on input li
+ne 113.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `table:1' on page 3 undefined on input line 138.
+
+[3]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 142.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 142.
+
+
+LaTeX Warning: Reference `rules' on page 4 undefined on input line 166.
+
+
+LaTeX Warning: Reference `rule4' on page 4 undefined on input line 166.
+
+[4]
+
+LaTeX Warning: Reference `BayesT' on page 5 undefined on input line 183.
+
+[5]
+
+LaTeX Warning: Reference `ex2' on page 6 undefined on input line 216.
+
+
+LaTeX Warning: Reference `ex4' on page 6 undefined on input line 216.
+
+
+LaTeX Warning: Reference `PD' on page 6 undefined on input line 216.
+
+
+LaTeX Warning: Reference `coin0' on page 6 undefined on input line 226.
+
+
+LaTeX Warning: Reference `ex4' on page 6 undefined on input line 226.
+
+<coin0.png, id=73, 717.68124pt x 525.965pt>
+File: coin0.png Graphic file (type png)
+ <use coin0.png>
+Package pdftex.def Info: coin0.png used on input line 229.
+(pdftex.def)             Requested size: 310.58998pt x 227.62204pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 230.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `ex' on page 6 undefined on input line 234.
+
+
+LaTeX Warning: Reference `ex1' on page 6 undefined on input line 234.
+
+
+LaTeX Warning: Reference `ex4' on page 6 undefined on input line 234.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--235
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--235
+
+ []
+
+
+LaTeX Warning: Reference `coin1' on page 6 undefined on input line 243.
+
+
+LaTeX Warning: Reference `coin1' on page 6 undefined on input line 245.
+
+
+LaTeX Warning: Reference `coin1' on page 6 undefined on input line 245.
+
+
+LaTeX Warning: Reference `coin1' on page 6 undefined on input line 245.
+
+
+LaTeX Warning: Reference `coin1' on page 6 undefined on input line 245.
+
+<coin1.png, id=75, 786.94pt x 666.49pt>
+File: coin1.png Graphic file (type png)
+ <use coin1.png>
+Package pdftex.def Info: coin1.png used on input line 248.
+(pdftex.def)             Requested size: 335.95204pt x 284.52756pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 249.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--253
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--253
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--253
+
+ []
+
+[6 <./coin0.png>]
+
+Package natbib Warning: Citation `AlanH' on page 7 undefined on input line 258.
+
+
+[7 <./coin1.png>]
+
+Package natbib Warning: Citation `LiV' on page 8 undefined on input line 293.
+
+
+Package natbib Warning: Citation `LiV' on page 8 undefined on input line 293.
+
+
+Package natbib Warning: Citation `RobT' on page 8 undefined on input line 296.
+
+
+LaTeX Warning: Reference `GLik' on page 8 undefined on input line 296.
+
+[8]
+
+LaTeX Warning: Reference `BayesTI' on page 9 undefined on input line 304.
+
+
+LaTeX Warning: Reference `gausian1' on page 9 undefined on input line 312.
+
+<g1.png, id=113, 497.86pt x 276.03125pt>
+File: g1.png Graphic file (type png)
+ <use g1.png>
+Package pdftex.def Info: g1.png used on input line 315.
+(pdftex.def)             Requested size: 230.94034pt x 128.0374pt.
+
+<g2.png, id=114, 506.89375pt x 280.04625pt>
+File: g2.png Graphic file (type png)
+ <use g2.png>
+Package pdftex.def Info: g2.png used on input line 316.
+(pdftex.def)             Requested size: 231.75853pt x 128.0374pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 317.
+See the caption package documentation for explanation.
+
+
+Package natbib Warning: Citation `RobT' on page 9 undefined on input line 317.
+
+
+Package natbib Warning: Citation `RobT' on page 9 undefined on input line 317.
+
+
+LaTeX Warning: Reference `LikG' on page 9 undefined on input line 322.
+
+
+Package natbib Warning: Citation `NR' on page 9 undefined on input line 328.
+
+[9 <./g1.png> <./g2.png>]
+
+LaTeX Warning: Reference `LikG' on page 10 undefined on input line 344.
+
+
+Package natbib Warning: Citation `LiV' on page 10 undefined on input line 344.
+
+
+LaTeX Warning: Reference `tableerrors' on page 10 undefined on input line 346.
+
+[10]
+
+Package natbib Warning: Citation `Fisher' on page 11 undefined on input line 38
+0.
+
+
+Package natbib Warning: Citation `LiV' on page 11 undefined on input line 380.
+
+
+LaTeX Warning: Reference `rule4' on page 11 undefined on input line 394.
+
+
+LaTeX Warning: Reference `rao' on page 11 undefined on input line 413.
+
+[11]
+
+Package natbib Warning: Citation `hiperp' on page 12 undefined on input line 42
+1.
+
+
+Package natbib Warning: Citation `hiperp1' on page 12 undefined on input line 4
+21.
+
+
+Package natbib Warning: Citation `hiperp1' on page 12 undefined on input line 4
+23.
+
+
+Package natbib Warning: Citation `hiperp' on page 12 undefined on input line 42
+3.
+
+
+Package natbib Warning: Citation `hiperp1' on page 12 undefined on input line 4
+23.
+
+
+Package natbib Warning: Citation `hiperp2' on page 12 undefined on input line 4
+61.
+
+
+Package natbib Warning: Citation `hiperp2' on page 12 undefined on input line 4
+61.
+
+[12]
+
+LaTeX Warning: Reference `chi2' on page 13 undefined on input line 468.
+
+
+LaTeX Warning: Reference `BayesT' on page 13 undefined on input line 486.
+
+
+Package natbib Warning: Citation `mcmc1' on page 13 undefined on input line 486
+.
+
+
+Package natbib Warning: Citation `mcmc2' on page 13 undefined on input line 486
+.
+
+
+Package natbib Warning: Citation `mcmc3' on page 13 undefined on input line 486
+.
+
+
+Package natbib Warning: Citation `mcmc4' on page 13 undefined on input line 486
+.
+
+[13]
+
+Package natbib Warning: Citation `metr' on page 14 undefined on input line 507.
+
+
+
+LaTeX Warning: Reference `ex4' on page 14 undefined on input line 527.
+
+
+LaTeX Warning: Reference `ex2' on page 14 undefined on input line 529.
+
+
+LaTeX Warning: Reference `ex3' on page 14 undefined on input line 529.
+
+
+LaTeX Warning: Reference `posteriord' on page 14 undefined on input line 529.
+
+<posterior.png, id=174, 717.68124pt x 525.965pt>
+File: posterior.png Graphic file (type png)
+ <use posterior.png>
+Package pdftex.def Info: posterior.png used on input line 535.
+(pdftex.def)             Requested size: 271.76897pt x 199.16928pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 536.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (10.0pt too wide) in paragraph at lines 532--540
+[]$[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 532--540
+
+ []
+
+[14]
+
+LaTeX Warning: Reference `chain1' on page 15 undefined on input line 541.
+
+<chain1.png, id=190, 471.7625pt x 316.18124pt>
+File: chain1.png Graphic file (type png)
+ <use chain1.png>
+Package pdftex.def Info: chain1.png used on input line 545.
+(pdftex.def)             Requested size: 254.72635pt x 170.71652pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 546.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (10.0pt too wide) in paragraph at lines 543--549
+[]$[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 543--549
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 543--549
+
+ []
+
+
+LaTeX Warning: Reference `chain2' on page 15 undefined on input line 555.
+
+[15 <./posterior.png> <./chain1.png>]
+<chain22.png, id=199, 382.42876pt x 252.945pt>
+File: chain22.png Graphic file (type png)
+ <use chain22.png>
+Package pdftex.def Info: chain22.png used on input line 559.
+(pdftex.def)             Requested size: 258.11075pt x 170.71652pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 560.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (10.0pt too wide) in paragraph at lines 557--563
+[]$[]$ 
+ []
+
+
+Package natbib Warning: Citation `LicV2' on page 16 undefined on input line 565
+.
+
+
+Package natbib Warning: Citation `AlanH' on page 16 undefined on input line 565
+.
+
+
+LaTeX Warning: Reference `chainprop' on page 16 undefined on input line 589.
+
+[16 <./chain22.png>] <chain2.png, id=212, 381.425pt x 252.945pt>
+File: chain2.png Graphic file (type png)
+
+<use chain2.png>
+Package pdftex.def Info: chain2.png used on input line 593.
+(pdftex.def)             Requested size: 235.98051pt x 156.49014pt.
+ <chain3.png, id=213, 381.425pt x 252.945pt>
+File: chain3.png Graphic file (type png)
+ <use chain3.png>
+Package pdftex.def Info: chain3.png used on input line 594.
+(pdftex.def)             Requested size: 235.98051pt x 156.49014pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 595.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (10.0pt too wide) in paragraph at lines 591--598
+[]$[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 591--598
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 591--598
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 599--600
+
+ []
+
+
+LaTeX Warning: Reference `chain1' on page 17 undefined on input line 601.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--602
+
+ []
+
+
+Package natbib Warning: Citation `thin' on page 17 undefined on input line 603.
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 603--605
+
+ []
+
+
+Package natbib Warning: Citation `autocor' on page 17 undefined on input line 6
+06.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 609--611
+
+ []
+
+
+Package natbib Warning: Citation `mcmcmc' on page 17 undefined on input line 61
+2.
+
+
+Package natbib Warning: Citation `mcmcmc' on page 17 undefined on input line 61
+2.
+
+[17 <./chain2.png> <./chain3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 626--628
+
+ []
+
+
+Package natbib Warning: Citation `gibbs1' on page 18 undefined on input line 62
+9.
+
+
+Package natbib Warning: Citation `gibbs2' on page 18 undefined on input line 62
+9.
+
+
+Package natbib Warning: Citation `hamiltonian1' on page 18 undefined on input l
+ine 629.
+
+
+Package natbib Warning: Citation `Hamiltonian2' on page 18 undefined on input l
+ine 629.
+
+
+Package natbib Warning: Citation `importance' on page 18 undefined on input lin
+e 629.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 629--630
+
+ []
+
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ± in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 631--633
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 631--633
+
+ []
+
+
+Package natbib Warning: Citation `cmbex' on page 18 undefined on input line 636
+.
+
+
+Package natbib Warning: Citation `observ' on page 18 undefined on input line 63
+6.
+
+[18]
+
+Package natbib Warning: Citation `Hz' on page 19 undefined on input line 651.
+
+
+Package natbib Warning: Citation `Hzdata' on page 19 undefined on input line 65
+1.
+
+
+LaTeX Warning: Reference `HzData' on page 19 undefined on input line 651.
+
+<Hzdata.png, id=231, 505.89pt x 373.8768pt>
+File: Hzdata.png Graphic file (type png)
+ <use Hzdata.png>
+Package pdftex.def Info: Hzdata.png used on input line 655.
+(pdftex.def)             Requested size: 307.99034pt x 227.62204pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 656.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (10.0pt too wide) in paragraph at lines 653--659
+[]$[]$ 
+ []
+
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ≥ in font cmr10!
+[19 <./Hzdata.png>]
+
+Package natbib Warning: Citation `MP1' on page 20 undefined on input line 695.
+
+
+Package natbib Warning: Citation `mont1' on page 20 undefined on input line 697
+.
+
+
+Package natbib Warning: Citation `MP2' on page 20 undefined on input line 697.
+
+
+Package natbib Warning: Citation `cosmomc' on page 20 undefined on input line 6
+99.
+
+Missing character: There is no ≈ in font cmr10!
+Missing character: There is no æ in font cmr10!
+
+Package natbib Warning: Citation `simplemc' on page 20 undefined on input line 
+701.
+
+<c1.png, id=247, 801.99625pt x 84.315pt>
+File: c1.png Graphic file (type png)
+ <use c1.png>
+Package pdftex.def Info: c1.png used on input line 712.
+(pdftex.def)             Requested size: 541.28738pt x 56.9055pt.
+
+Overfull \hbox (31.28738pt too wide) in paragraph at lines 712--713
+ [][] 
+ []
+
+<c2.png, id=248, 803.0pt x 98.3675pt>
+File: c2.png Graphic file (type png)
+ <use c2.png>
+Package pdftex.def Info: c2.png used on input line 715.
+(pdftex.def)             Requested size: 543.26366pt x 66.55112pt.
+
+Overfull \hbox (33.26366pt too wide) in paragraph at lines 715--716
+ [][] 
+ []
+
+<c3.png, id=249, 800.9925pt x 371.3875pt>
+File: c3.png Graphic file (type png)
+ <use c3.png>
+Package pdftex.def Info: c3.png used on input line 718.
+(pdftex.def)             Requested size: 543.10326pt x 251.80705pt.
+
+Overfull \hbox (33.10326pt too wide) in paragraph at lines 718--719
+ [][] 
+ []
+
+<c4.png, id=250, 801.99625pt x 219.82124pt>
+File: c4.png Graphic file (type png)
+ <use c4.png>
+Package pdftex.def Info: c4.png used on input line 721.
+(pdftex.def)             Requested size: 540.84685pt x 148.23904pt.
+
+Overfull \hbox (30.84685pt too wide) in paragraph at lines 721--722
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `LastBibItem' on page 20 undefined on input line 724.
+
+[20 <./c1.png> <./c2.png>]
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
+
+Underfull \hbox (badness 1221) in paragraph at lines 750--752
+[]\OT1/cmr/m/n/9 Verde L., as-troph/0712.3028 (2007) \OT1/cmr/m/it/9 http://www
+.behind-the-enemy-lines.com/2008/01/are-you-bayesian-or-frequentist-
+ []
+
+[21 <./c3.png> <./c4.png>]
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ú in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ù in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
+
+No file main.bbl.
+
+Package natbib Warning: There were undefined citations.
+
+[22]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 803.
+ (./main.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 803.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 803.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  29142C5FDDE0A61C37DA2982CC248AB2;2674.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right .
+
+
+ ) 
+Here is how much of TeX's memory you used:
+ 9579 strings out of 493029
+ 137859 string characters out of 6136234
+ 242266 words of memory out of 5000000
+ 12801 multiletter control sequences out of 15000+600000
+ 17166 words of font info for 63 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 36i,9n,41p,1226b,519s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on main.pdf (22 pages, 777418 bytes).
+PDF statistics:
+ 442 PDF objects out of 1000 (max. 8388607)
+ 367 compressed objects within 4 object streams
+ 188 named destinations out of 1000 (max. 500000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+
