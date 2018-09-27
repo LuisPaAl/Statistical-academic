@@ -61,19 +61,19 @@ Once the new age of cosmological experiments arrived with a very large variety o
 
 The principal objective of this work is to give the reader a first step on bayesian parameter inference and how we can use it in cosmology. We consider that the reader is familiarized with the basic concepts of statistics, but not necessarily with Bayesian statistics. Then, we give a not so formal panorama of it, enough to understand the basics concepts of our main objective. This panorama is written in a generic way in  such case that, if the reader is not interested in the cosmological section but in the parameter inference one, he/she can draw on the bayesian part.  
 
-This paper is organized as follows. We start in section [Bayesian vs frequentist statistic] mentioning the most important differences between the Bayesian statistics and the Frequentist one. Then, in section [A first look on the Bayesian statistics] we present the basic mathematical concepts in Bayesian statistics that are going to be necessary at the moment that we want to estimate a model parameter. Once we have the mathematical concepts, we continue in section [Numerical tools] with the numerical tools at our disposal that can help us to simplify our homework. Such numerical tools are so important given the fact that, in general, it is not possible to apply the mathematical ones analytically when several parámeters of our models need to be confronted with data. In section [Bayesian statistics and cosmology] we show how these tools can be used in cosmology, mentioning the different numerical codes free to download on web that are programed to do this homework and applying them to specific examples. Finally, in section [Conclusions] we conclude this paper.
+This paper is organized as follows. We start in section [Bayesian vs Frequentist statistic] mentioning the most important differences between the Bayesian statistics and the Frequentist one. Then, in section [A first look on the Bayesian statistics] we present the basic mathematical concepts in Bayesian statistics that are going to be necessary at the moment that we want to estimate a model parameter. Once we have the mathematical concepts, we continue in section [Numerical tools] with the numerical tools at our disposal that can help us to simplify our homework. Such numerical tools are so important given the fact that, in general, it is not possible to apply the mathematical ones analytically when several parámeters of our models need to be confronted with data. In section [Bayesian statistics and cosmology] we show how these tools can be used in cosmology, mentioning the different numerical codes free to download on web that are programed to do this homework and applying them to specific examples. Finally, in section [Conclusions] we conclude this paper.
 
-\section{Bayesian vs frequentist statistics}
+\section{Bayesian vs Frequentist statistics}
 
-In this section we introduce the basics to understand the differences about bayesian and frequentist statistics. For an extended review see \cite{bayeslecture}, \cite{AlanH}, \cite{RobT}, \cite{LiV} or/and \cite{RobTr}. 
-
-Fundamentally, the main difference between bayesian and frequentist is its definition of probability. In frequentist statistic probability has mining in a limiting case of repeating mesurements
+Fundamentally, the main difference between Bayesian and Frequentist satistics is its definition of probability. In a frequentist point of view probability has mining in a limiting case of repeating mesurements
 \begin{equation}
 P=\frac{n}{N}
 \end{equation}
 where $n$ denotes the number of successes and $N$ the total number of trials. Frequentist define probability as the limit for the number of independent trials going to infinity. Then, \textbf{for frequentist, probabilities are fundamentally related to frequencies of events}. On the other hand in bayesian statistic the concept of probability is extended to cover degrees of certainty about statement. \textbf{For Bayesians, probabilities are fundamentally related to our own knowledge about an event}.
 
-If we consider that $x$ is a random variable related with a particular event and $P(x)$ its corresponding probability distribution, for both cases the same rules of probabilities apply, which are\footnote{This rules are defined for a continuous variable. However, the corresponding discreet definition can be given immediately by replacing $\int \rightarrow \sum$.}
+On this part we introduce the basics concepts neccesary to understand the basics consequences that this discrepancy entails. For an extended review see \cite{bayeslecture}, \cite{AlanH}, \cite{RobT}, \cite{LiV} or/and \cite{RobTr}. 
+
+If we consider that $x$ is a random variable related with a particular event and $P(x)$ its corresponding probability distribution, for both cases the same rules of probabilities apply\footnote{This rules are defined for a continuous variable. However, the corresponding discreet definition can be given immediately by replacing $\int \rightarrow \sum$.}
 \begin{subequations}\label{rules}
 \begin{equation}\label{rule1}
 P(x)\geq 0
@@ -90,31 +90,34 @@ P(x_1,x_2)=P(x_1)P(x_1|x_2)\end{equation}
 In words, the last rule can be explain as: the probability of $x_1$ and $x_2$ to happen is the probability of $x_1$ times the conditional probability of $x_2$ given that $x_1$ has already happened. \\
 %But what does the last rules means? The first condition is necessary because we want that the probability of having an event is always positive. The second rule is a normalized relation which tell us that whatever event we have, it will always be a corresponding probability in the model that we are working with. Now, in the third point we have a relation about two mutually exclusive events which can be reed as follows: if $x_1$ and $x_2$ are two measurements one independent of the other, then 
 
+
+This rules for a probability distribution must to be fulfilled by bout description, but what are the consequences derived by the fact that bout scenarios have a different definition of probability? In what follows let us try to response this question.
+
 \subsection{Frequentist statistics}
 
 Any frequentist inferential procedure relies on three basic ingredients: the data, a model and an estimator procedure. The central assumption in frequentism is that the data has a definite but unknown, underlying distribution to which all inference pertains.
 
 The \textit{data} is a mesurement or observation which we denote by $X$, taking values in a corresponding sample space. Then, a \textit{sample space} of an observation $X$ can be defined as a measurable space $(x,\hat B)$ containing all values that $X$ can take upon measurement.
 
-In frequentist statistics it is considered that there is a probability function $P_0:\hat B\rightarrow [0,1]$ on the sample space $x$ representing the `` true distribution of the data"
+In Frequentist statistics it is considered that there is a probability function $P_0:\hat B\rightarrow [0,1]$ on the sample space $x$ representing the `` true distribution of the data"
 \[X\sim P_0\]
 
-The second ingredient mentioned above is the model. For frequentist statistics a model $Q$ is a collection of probability measures $P:\hat B\rightarrow[0,1]$ on the sample space $(x,\hat B)$. The distributions $P_\theta$ are called model distributions. In this approach $\theta$ is unchanged.  Of course $P_\theta(x)$ have to follow the rules mentioned at the beginning of this section.
+Now we have the model. For Frequentist statistics a model $Q$ is a collection of probability measures $P:\hat B\rightarrow[0,1]$ on the sample space $(x,\hat B)$. The distributions $P_\theta$ are called model distributions. In this approach $\theta$ is unchanged. 
 
 A model $Q$ is said to be well-specified if it contains the true distribution of the data $P_0$, i.e.
 \[P_0\in Q\]
 
 Finally we need a point-estimator(or estimator) for $P_0$. An estimator for $P_0$ is a map $\hat P:x\rightarrow Q$, representing our "best guess" $\hat P\in Q$ for $P_0$ based on the data $X$.
 
-Hence, the frequentist statistic is based in trying to respond the following questions: "what does the data make clear about $P_0$?", "from the data, what can we say about the mean of $P_0$?",  etcetera.
+Hence, the Frequentist statistics is based in trying to respond the following questions: "what does the data make clear about $P_0$?" or "from the data, what can we say about the mean of $P_0$?".
 
 \subsection{Bayesian statistics}
 
 As it is explained in \cite{bayeslecture} in bayesian statistics, data and model form two factors of the same space, i.e. no formal distinction is made between measured quantities $X$ and parameters $\theta$. One may envisage the process of generating a measurement outcome $Y=y$ as two draws, one draw for $\Theta$ (or $Q$)
-to select a value of $\theta$ (or distribution $P_\theta$) and a subsequent draw for $P_\theta$ to arrive at $X=x$. This perspective may seem rather absurd in view of the definitions made in the subsection above. In this way an element $P_\theta$ of the model is interpreted simply as the distribution of $X$ given the parameter value $\theta$, i.e. as the conditional distribution $X|\theta$.
+to select a value of $\theta$ (or distribution $P_\theta$) and a subsequent draw for $P_\theta$ to arrive at $X=x$. This perspective may seem rather absurd in view of the definitions for a frequentist thought, but in a bayesian one, where probabilities are related with our own knowledge, it result natural to associate probabilities distribution for our parameters. In this way an element $P_\theta$ of the model is interpreted simply as the distribution of $X$ given the parameter value $\theta$, i.e. as the conditional distribution $X|\theta$.
 \subsection{A little more clear}
 
-It is so important to understand the differences between both kind of approximations. For it, let us review with an example in this subsection the basic differences about the frequentist and bayesian statistics.
+It is so important to understand the differences between both kind of approximations. For it, let us review in this subsection the mandatory example that can let us to understand easily the differences between bout interpretations.
 \begin{table}[h!]
 \centering
 \begin{tabular}{||l|l||} 
@@ -131,16 +134,16 @@ It is so important to understand the differences between both kind of approximat
 Parameters are fixed & Data are fixed\\ [1ex] 
  \hline
 \end{tabular}
-\caption{\footnotesize{Main differences between the bayesian and frequentist interpretations.}}
+\caption{\footnotesize{Main differences between the bayesian and Frequentist interpretations.}}
 \label{table:1}
 \end{table}
 
-In table \ref{table:1} we have a very little review of the most important differences about the two approximations. In the other side in the next example we present an experiment seen in both points of view. Because we are interested in knowing both descriptions we show only the basic results of the procedures and we analyze the results in the point of view of the frequentist and bayesian statistics. 
+In table \ref{table:1} we have a very little review of the most important differences about the two approximations. In the other side in the next example we present an experiment seen in both points of view. Because we are interested in knowing both descriptions, we show only the basic results of the procedures and we analyze the results in the point of view of the Frequentist and Bayesian statistics. 
 
-\textit{Example.-} In this experiment  you have a coin that has a probability $p$ that when is through, it is head and a probability $1-p$ to be tail. Then, trying to estimate $p$ you flip the coin 14 times (spoiler alert: p=0.5). The result is head 10 times. Now, what we are interested about is in the next two possible events. To be precise: ``What is the probability that in the next two tosses we will get two heads in a row?"
+\textit{Example.-} In this experiment  you have a coin that has a probability $p$ that when is through it is head and a probability $1-p$ to be tail. Trying to estimate $p$ (that must be $p=0.5$) you flip the coin 14 times, obtaining head in 10 of them. Now, what we are interested about is in the next two possible events. To be precise: ``What is the probability that in the next two tosses we will get two heads in a row?"
 \begin{itemize}
-\item \textit{Frequentist approximation}. As we mentioned before in frequentist statistics probability is related with a frequency of events. In this way we have that our best estimate for $p$ is $P(head)=$No.heads/No.total$=10/14$. So, the probability to have 2 heads in a row is $P(2heads)=P(head)P(head)\simeq 0.51$.  
-\item \textit{Bayesian approximation}. Now in the bayesian approach $p$ is not a value, it is a random variable with its own distribution. The distribution must be defined by the existing evidence. In this example a good distribution for $p$ is a binomial distribution. Then, by considering a uniform distribution as our prior information (we do not know anything about $p$) we have that the probability of having two heads is
+\item \textit{Frequentist approximation}. As we mentioned, in Frequentist statistics probability is related with a frequency of events. In this way we have that our best estimate for $p$ is $P(head)=p=$No.heads/No.total$=10/14$. So, the probability to have 2 heads in a row is $P(2heads)=P(head)P(head)\simeq 0.51$.  
+\item \textit{Bayesian approximation}. In the bayesian approach $p$ is not a value, it is a random variable with its own distribution. The distribution must be defined by the existing evidence. In this example a good distribution for $p$ is a binomial distribution. Then, by considering a uniform distribution as our prior information (we do not know anything about $p$) we have that the probability of having two heads is
 \[
 P(2heads|D)=\frac{B(13,5)}{B(11,5)}=0.485
 \]
@@ -149,8 +152,9 @@ where $B(x,y)$ is the beta function. This distribution appears given the fact th
 
 We can see that both approximations arrive at different results. In one of them, since we consider probability as a frequency of events we have a bigger probability to have two heads in a row than when we consider probability as our knowledge about the experiment. However, in both cases the probability defers from the real one ($P(2heads)=0.25$) because we have not enough data for our estimations.
 
-\textit{Note}: If you are not familiarized with bayesian statistics,  please be not scared of this last example. In the next section we will introduce the basic concepts to understand the bayesian part of it and then we will go back to this example and we will solve it using the new tools learned.   
+\textit{Note}: If you are not familiarized with Bayesian statistics,  please be not scared of this last example. In the next section we will introduce the basic concepts to understand the bayesian part of it and then we will go back to this example and we will solve it using the new tools learned.   
 
+\textcolor{red}{(Tratar de escribir esta parte un poco m\'as bonito)}
 %\subsection{Summary}
 
 %In this section we reviewed the basic differences between the Bayesian and the Frequentist interpretation of statistics. Basically, what is important here is to notice that probability has a different meaning for a frequentist statistician than for a bayesian one. While for a Frequentist, probabilities are related to frequencies of events, for Bayesians, probabilities are related to our own knoledge about an event. Then, given this basic difference, there are several other ones that are a result of it and that are well summarized in table  \ref{table:1}. 
@@ -159,15 +163,15 @@ We can see that both approximations arrive at different results. In one of them,
 
 Before to start with the applications of bayesian statistics in cosmology it is necessary to know the most important tools for the bayesian procedure. In this section we review them in an informal way, keeping in mind that more formal readers can look for the formal treatment in the literature.   
 
-\subsection{Bayes theorem, prior and posterior distributions}\label{BTPP}
+\subsection{Bayes theorem, priors, posteriors and all that stufs}\label{BTPP}
 
-When a statistician is interested in working in the Bayes framework there are 3 concepts that are necessary to understand before to interpret whatever result that he could obtain: the Bayes theorem, priors and posterior distributions. In this section we quickly review these concepts and then we take back the example about the coins given in the last section in order to exemplify them. 
+When a statistician is interested in working in the Bayes framework there are several concepts that are necessary to understand before to interpret whatever result that he could obtain. In this section we quickly review these concepts and then we take back the example about the coins given in the last section in order to exemplify them. 
 
-\textit{The Bayes theorem.} The Bayes theorem is a direct consequence of the axioms of probability \eqref{rules}. We can see that from \eqref{rule4} without lost of generality we can rewrite $P(x_2,x_1)=P(x_2)P(x_2|x_1)$. But, of course, one expect that the relation $P(x_1,x_2)=P(x_2,x_1)$ have to be fulfill. With this we arrive at the Bayes formula   
+\textit{The Bayes theorem.} The Bayes theorem is a direct consequence of the axioms of probability \eqref{rules}. We can see that from \eqref{rule4}, without lost of generality, we can rewrite $P(x_2,x_1)=P(x_2)P(x_2|x_1)$. Considering that the relation $P(x_1,x_2)=P(x_2,x_1)$ have to be fulfill, we arrive at the Bayes formula   
 \begin{equation}
 P(x_2|x_1)=\frac{P(x_2)P(x_1|x_2)}{P(x_1)}
 \end{equation}
-As we mentioned before, in the Bayes framework, data and model are part of the same space. In this way considering $x_1\rightarrow D$ as a set of data, and $x_2\rightarrow H$ as our "hypothesis" we can rewrite the above equation in the Bayesian statistics without lost of generality as
+As it was mentioned, in the Bayes framework, data and model are part of the same space. In this way considering $x_1\rightarrow D$ as a set of data, and $x_2\rightarrow H$ as our "hypothesis" we can rewrite the above equation in the Bayesian statistics without lost of generality as
 \begin{equation}\label{BayesT}
 P(\theta,H|D)=\frac{P(\theta,H)P(D|\theta,H)}{P(D)}
 \end{equation}
@@ -180,7 +184,7 @@ Then, this quantity is usually ignored for practical proposes when the parameter
 
 We can notice here that we have added a new ingredient in our Bayes description, which is the hypothesis. An hypothesis is our best guess of the model that best matches with the data, $H=Q_{best}$.
 
-We can see that Bayes theorem has an enormous implication respect to an statistical inferential point of view. In a typical scenario we can collect some data and wish to interpret them in terms of a model. However, what we can usually do it is the opposite, is, we have first a set of data and then we can confront a model considering what is the probability that our model matches with the data. As we can see from \eqref{BayesT} Bayes theorem gives us a tool where we can relate both scenarios. Then, thanks to the Bayes theorem, in principle, we can know what is the "real" model that best fixes the data. 
+We can see that Bayes theorem has an enormous implication respect to an statistical inferential point of view. In a typical scenario we can collect some data and wish to interpret them in terms of a model. However, what we can usually do it is the opposite, is, we have first a set of data and then we can confront a model considering what is the probability that our model matches with the data. As we can see from \eqref{BayesT} Bayes theorem gives us a tool where we can relate both scenarios. Then, thanks to the Bayes theorem, in principle, we can know what is the ``real" model that best fixes the data. 
 
 \textit{Example}.- We consider again the example shown in the last section. What we are interested in is knowing what is the probability $P(2heads|D)$ ($D=$ our 14 data) to have 2 heads in a row given the 14 data that we already have. For simplicity we do not update $p$ between the two tosses and we assume that both tries are independent. To obtain the result that we expect we need to calculate
 \begin{equation}\label{ex}
@@ -222,7 +226,7 @@ and then
 P(p|D)=\frac{p^{10+a-1}(1-p)^{4+b-1}}{B(10+a,4+b)}
 \end{equation}
 
-Now what we need to know are the values of $a$ and $b$. If we assume that we do not know anything about $p$ we can consider our prior as a normal distribution which corresponds to take $a=b=1$. 
+Now what we need to know are the values of $a$ and $b$. If we assume that we do not know anything about $p$ we can consider our prior as a uniform distribution which corresponds to take $a=b=1$. 
 Notice from figure \ref{coin0} that our posterior result \eqref{ex4} does not agree with the real result that we know (p=0.5). What we would like to expect is that our posterior distribution is centered at $p=0.5$ with a very thin distribution. Of course, this disagreement could be fixed if we continue increasing our experimental results.\\ $ $\\
 \begin{minipage}{\textwidth}
 \centering
@@ -242,7 +246,7 @@ P(2heads|D)=\frac{B(13,5)}{B(11,5)}=0.485
 
 As we saw in the coin example, due to the fact that we have not enough data we did not arrive to the real value of $p$. If we would like to be closer to the real one we should continue flipping the coin until the amount of data were enough. If we continue with the coin example and, we say, after throwing 100 times the coin we obtain 56 heads, and then after throwing 500 times the coin we obtain 246 heads,we should obtain a more tiny distribution centered near $p=0.5$ (see fig. \ref{coin1}). In this way, it is clear that in order to confront a parameter model and be more accurate of the most probable (``real") value of it, it is necessary to increase the amount of data (and the capacity for precision) in any experimentation. 
 %For example, in the cosmological context, there are a lot of experiments like the ones associated with the barionic acoustic oscilations (BAO), the cosmic microwave background (CMB), the neutrinos background radiation, the redshift survey, etc. (if you are interested in knowing a pedagogical explanation of the different experiments, you can look for \cite{observ}), that can help us to confront our model's parameters (or models) and discriminate them in a more accurately way. 
-Then, what we have here is that we will have some model's parameters that has to be confronted with different set of data. There are two ways we can do this: first is regarding the sum of all the sets of data that we have, or consider each data set as the new data, but our prior information has to be set by what we know about the previous set of data. What is important in bayes statistic is that it doesn't matter wich of the 2 possibilities we choose. In the coin context it means that it is equivalent to start with the prior given in figure \ref{coin1}-a and considering the 500 data we can arrive at the posterior \ref{coin1}-d or start with \ref{coin1}-c as our prior and consider the last 400 data to obtain the same posterior \ref{coin1}-d. \\ $ $ \\
+Then, what we have here is that we will have some model's parameters that has to be confronted with different set of data. There are two ways we can do this: first is regarding the sum of all the sets of data that we have, or consider each data set as the new data, but our prior information has to be set by what we know about the previous information. What is important in bayes statistic is that it doesn't matter wich of the 2 possibilities we choose. In the coin context it means that it is equivalent to start with the prior given in figure \ref{coin1}-a and considering the 500 data we can arrive at the posterior \ref{coin1}-d or start with \ref{coin1}-c as our prior and consider the last 400 data to obtain the same posterior \ref{coin1}-d. \\ $ $ \\
 \begin{minipage}{\textwidth}
 \centering
 \includegraphics[height=10cm]{coin1.png}
@@ -262,13 +266,13 @@ P(\theta,H|DI')=\frac{P(\theta,H|I)P(DD'|\theta,HI)}{P(DD'|I)}=P(\theta,H|[DD']I
 where we can see explicitly the equivalence of the 2 different options for analyzing our results. 
 \subsection{About the Likelihood}
 
-As we mentioned before the evidence in the Bayes theorem is not usually important when we try to do any inference procedure in the parameter space of a model. Then, we can fix it as $P(D)=1$ without lost of generality. In this way, if we ignore the prior\footnote{It is expected that the real value of a given parameter is independent of the election of the prior.} we can identify the likelihood with $P(H|D)$ and thus by maximizing it we can find the most likely model (or model's parameters) given the data. However having ignored $P(D)$ and the prior this approach cannot give in general a goodness of fit and thus cannot give an absolute probability for a given model. However it can give relative probabilities. In the other side, it is possible to report results independently of the prior by using the \textit{Likelihood ratio}. The likelihood at a particular point in parameter space can be compared with the one that best fit the observations, $L_{max}$. Then we can say that a model is acceptable if the likelihood ratio
+We mentioned that the evidence in the Bayes theorem is not usually important when we try to do any inference procedure in the parameter space of a single model. Then, we can fix it as $P(D)=1$ without lost of generality. If we ignore the prior\footnote{It is expected that the real value of a given parameter is independent of the election of the prior.} we can identify the likelihood with $P(H|D)$ and thus by maximizing it we can find the most likely model (or model's parameters) given the data. However having ignored $P(D)$ and the prior this approach cannot give in general a goodness of fit and thus cannot give an absolute probability for a given model. However it can give relative probabilities. In the other side, it is possible to report results independently of the prior by using the \textit{Likelihood ratio}. The likelihood at a particular point in parameter space can be compared with the one that best fit the observations, $L_{max}$. Then we can say that a model is acceptable if the likelihood ratio
 \begin{equation}
 \Lambda=-2\ln\left[\frac{L(D;\theta,H)}{L_{max}}\right]
 \end{equation}
 is bigger than a given value.
 
-Let us assume we have a posterior distribution, which is single-picked. We consider that $\hat \theta$ corresponds with the peak of the distribution (most probable) or the mean
+In the other side, let us assume we have a posterior distribution, which is single-picked. We consider that $\hat \theta$ corresponds with the peak of the distribution (most probable) or the mean
 \begin{equation}
 \hat \theta =\int d\theta \theta P(\theta,H|D).
 \end{equation}
@@ -336,7 +340,7 @@ If we evaluate the quantity $Q$ in the best fit of the chisquare (i.e. its minim
 In the other side if $Q$ is too large there are some reasons that could cause such overestimation:
 \begin{itemize}
 \item Errors have been overestimated
-\item Data are correlated of non-independent
+\item Data are correlated or non-independent
 \item The distribution is non-Gaussian.
 \end{itemize}
 \subsection{Contour plots and confidence regions}
@@ -414,11 +418,33 @@ The $\leq$ in \eqref{rao} is called the Kramer-Rao inequality. We can see that t
 
 \subsection{Importance Sampling}
 
-\textcolor{red}{BLABLABLA}
+We call importance sampling (IS) to the different techniques of determining properties of a distribution by drawing samples from another one. The basic idea of this procedure is that we consider that the distribution one draws from should be (for a larger number of samples) 
+ representative of the distribution of interest, in such case we should infer different quantities of it. In this section we review the basic concepts necessary to understand what IS is following \cite{importancesampling}.
 
+Suppose we are interested in computing the expectation value $\mu_f=E_p[f(X)]$, where $p(x)$ is a probability density of a random variable $X$ and sub-index $p$ means average over the distribution $p$. Then, if now we consider a new probability density $q(x)$ that satisfies $q(x)>0$ whenever $f(x)p(x)\not = 0$, we can rewrite the mean value $\mu_f$ as
+\begin{equation}
+\mu_f = \int f(x)p(x)dx=\int f(x)\frac{p(x)}{q(x)}q(x)dx=E_q[f(X)w(x)]
+\end{equation}
+where $w(x)=p(x)/q(x)$ and now we have an average over $q$. In this way if we have a collection of different draws $x^{(1)},...,x^{(m)}$ from $q(x)$, we can estimate $\mu_f$ using this draws as
+\begin{equation}
+\hat \mu_f = \frac{1}{m}\sum_{j=1}^m w(x^{(j)})f(x^{(j)})
+\end{equation}
+If $p(x)$ is known only up to a normalizing constant, the above expression can be calculated  as a ratio estimate
+\begin{equation}
+\hat \mu_f=\frac{\sum_{j=1}^m w(x^{(j)})f(x^{(j)})}{\sum_{j=1}^mw(x^{(j)})}.
+\end{equation}
+For the strong law of large numbers, in the limit when $m\rightarrow \infty$ we will have that $\hat \mu_f\rightarrow \mu_f$.
+
+In Bayes analysis it can be useful to compute the ratio between evidences for two different models
+\begin{equation}\label{importanceratio}
+\frac{P'(D)}{P(D)}=E\left[\frac{P'(\theta,D}{P(\theta,D)}\right]_{P(\theta|D)}\simeq \frac{1}{N}\sum_{n=1}^N\frac{P'(D|\theta_n)P'(\theta_n)}{P(D|\theta_n)P(\theta_n)}
+\end{equation}
+where the samples $\lbrace\theta_n\rbrace$ are drawn from $P(\theta|D)$.
+
+An important result for importance sampling is that if we have a new set of data which is broadly consistent with the current data, in the sense that the posterior only shrinks, we can make use of importance sampling in order to quickly calculate a new posterior including the new data.
 \subsection{Combining datasets: Hyperparameter method}
 
-Suppose we are dealing with multiple datasets,  $\lbrace D_1,...,D_N\rbrace$, coming from a collection of different surveys $\left\lbrace S_1,...,S_N\right\rbrace$. Of course we could not be sure, a priori, that all our data surveys are consistent with one another or if there is one or more that are likely to be erroneous. If we were sure that all this datasets are consistent, then it should be enough to update the probability as was seen in [Updating the probability distribution for a model] in order to calculate the new posterior distribution for the parameters that we are interested about. However, because usually we are not sure about this, a way that we can have any information about how much useful is a data survey is by introducing the hyperparameter method. This method was firstly proposed by \cite{hiperp} and \cite{hiperp1} in order to perform a joint estimation of cosmological parameters from combined datasets and it can be used always that we can consider every survey independent between them.
+Suppose we are dealing with multiple datasets,  $\lbrace D_1,...,D_N\rbrace$, coming from a collection of different surveys $\left\lbrace S_1,...,S_N\right\rbrace$. Of course we could not be sure, a priori, that all our data surveys are consistent which one another or if there is one or more that are likely to be erroneous. If we were sure that all this datasets are consistent, then it should be enough to update the probability as was seen in [Updating the probability distribution for a model] in order to calculate the new posterior distribution for the parameters that we are interested about. However, because usually we are not sure about this, a way that we can have any information about how much useful is a data survey is by introducing the hyperparameter method. This method was firstly proposed by \cite{hiperp} and \cite{hiperp1} in order to perform a joint estimation of cosmological parameters from combined datasets and it can be used always that we can consider every survey independent between them.
 
 In this section we review the main steps necessary to understand the hyperparameter method following ref. \cite{hiperp1}. If readers are interested in a more explicit explanation of it, they can consult \cite{hiperp} or \cite{hiperp1}.
 
@@ -461,11 +487,15 @@ $>100$ & Decisive\\ [1ex]
 \caption{Criteria for the ratio between two Bayesian evidence, taken from \cite{hiperp2}.}
 \end{table}
 
-If we consider a Gaussian Likelihood and we consider a maximum entropy prior assuming that on average the hyperparameters weight are unity, we can obtained an explicitly functional form for $K$ given by
+If we consider a Gaussian Likelihood and we consider a maximum entropy prior assuming that on average the hyperparameters weight are unity, we can rewritte the marginalized Likelihood function $L(D;\theta,H_1)$ for model $H_1$ as
 \begin{equation}
-K=\prod_{k=1}^N\frac{2^{n_k/2+1}\Gamma(n_k/2+1)}{\chi^2_k+2}e^{-\chi_k^2/2}
+P(D;\theta,H_1)=\prod_{k=1}^N\frac{2\Gamma(\frac{n_k}{2}+1)}{\pi^{n_k/2}|V_k|^{1/2}}(\chi_k^2+2)^{-\left(\frac{n_k}{2}+1\right)}
 \end{equation}
-where $\chi_k$ is the one given by \ref{chi2} for every dataset and $n_k$ is the number of points content on $D_k$.(\textcolor{red}{Aqu\'i hay que meter como hacer las estimaciones de una evidencia en funci\'on de la otra. De hecho eso se meter\'a en importance sampling y aqu\'i s\'olo hay que referenciar la ecuaci\'on que necesitamos})
+obtaining an explicitly functional form for $K$ given by
+\begin{equation}
+K=\prod_{k=1}^N\frac{2^{n_k/2+1}\Gamma(n_k/2+1)}{\chi^2_k+2}e^{-\chi_k^2/2}.
+\end{equation}
+Here $\chi_k$ is the one given by \ref{chi2} for every dataset and $n_k$ is the number of points content on $D_k$. Notice that if we have a set of independent samples for $H_0$, we can compute an estimate for $K$ with the help of equation \eqref{importanceratio}. 
 %\subsubsection{Computing Fisher matrices}
 
 
@@ -479,11 +509,9 @@ where $\chi_k$ is the one given by \ref{chi2} for every dataset and $n_k$ is the
 
 In a typical scenario it is not possible to compute the posterior analytically in our Bayesian inference procedure. In this way it is important to know, once we have all the necessary mathematical tools to make a bayesian estimation, all the numerical tools at our disposal that can help us in our parameter estimation. Of course we could have several numerical candidates that could help us in this homework, but in this section we present only the typical one (and the easier) used in cosmology: the Monte Carlo Markov Chain (MCMC) with the Metropolis Hasting algorithm (MHA). Additionally in this section we present some useful details that we have to take into account if we want to make efficient our computation. 
 
-\textit{\textbf{Important:}} In the next section we are going to apply, using a python code, all this new techniques to a cosmological example. The code is very simple and is programed using the PyMC module of Python. You can see it in appendix [B]. We present this code in order to make easier the homework for the reader that is starting with the parameter inference techniques and is interested in programing his/her own MCMC code. Notice that if you are not interested in a cosmological model, it is enough to change it in the function "model" by the one that you must prefer. 
-
 \subsection{MCMC techniques for parameter inference}
 
-The purpose of a MCMC algorithm is to construct a sequence of points in a parameter space (called ``chain") in order to evaluate the posterior of eq. \eqref{BayesT} for the usual case where analytical solutions do not exist or are insufficiently accurate. In this section we review the basics results for this procedure in a simplistic way but for curious readers it is recommendable to see \cite{mcmc1},\cite{mcmc2}, \cite{mcmc3} or only for markov chains \cite{mcmc4}.
+The purpose of a Monte Carlo Markov Chain (MCMC) algorithm is to construct a sequence of points in a parameter space (called ``chain") in order to evaluate the posterior of eq. \eqref{BayesT} for the usual case where analytical solutions do not exist or are insufficiently accurate. In this section we review the basics results for this procedure in a simplistic way but for curious readers it is recommendable to see \cite{mcmc1},\cite{mcmc2}, \cite{mcmc3} or only for markov chains \cite{mcmc4}.
 
 A sequence $X_1,X_2,...$ of random elements of some set is a \textit{Markov chain} if the conditional distribution of $X_{n+1}$ given $X_1,...,X_n$ depends on $X_n$ only. In other words a Markov chain is a process where we can do predictions of the future based only in the information given at the present. An important property of a Markov chain is that they can be shown to converge to a stationary state were successive elements of the chain are samples from the target distribution, in our case the posterior $P(\theta,H|D)$. In this way we can estimate all the usual quantities of interest from it (mean, variance, etc). The number of points required to get good estimates is said to scale linearly with the number of parameters, so very quickly become much faster than grids as the dimensionality increases.
 
@@ -492,7 +520,7 @@ The target density is approximated by a set of delta function
 p(\theta,H|D)\simeq \frac{1}{N}\sum_{i=1}^N \delta(\theta-\theta_i)
 \end{equation}
 
-In this procedure the posterior mean is given by
+Then, the posterior mean is calculated as
 \begin{equation}
 \langle\theta\rangle=\int d\theta \theta P(\theta,H|D)\simeq \frac{1}{N}\sum_{i=1}^N\theta_i
 \end{equation}
@@ -501,17 +529,17 @@ where $\simeq$ follows because the sample $\theta_i$ are generated from the post
 \langle f(\theta)\rangle \simeq\frac{1}{N}\sum_{i=1}^N f(\theta_i)
 \end{equation}
 
-As was mentioned, in a Markov chain it is necessary to generate a new point $\theta_{i+1}$ in our chain from the present point $\theta_i$. However, we would like to accept this point as a new point in the chain with a probability which depends on the ratio of the new and old target densities. The distribution of steps is called the \textit{proposal distribution}. In this way what we need now is an algorithm which can help us to accept/refuse the new points. The most popular algorithm is the so-called Metropolis Hasting algorithm and in what follows we explain in what it consists.
+As was mentioned, in a Markov chain it is necessary to generate a new point $\theta_{i+1}$ in our chain from the present point $\theta_i$. However, as it is expected, we need a criteria for accepting (or refusing) this new point depending if it results to be better for our model or not. In the other side, if this new step is better than the previous one, we would like not always accept it, since it could be the case that we were converging to a local maximum in our parameter space and therefore not completely mapping it. The simplest algorithm that contains all this information in its methodology is known as the Metropolis-Hasting algorithm and in what follows we explain in what it consists.
 \subsubsection{Metropolis Hasting algorithm}
 
-The \textit{Metropolis Hasting algorithm} (MHA) \cite{metr} is the simplest MCMC algorithm. For it, starting from a random initial point $\theta_0$, with associated posterior probability $p_0=p(\theta_0,H|D)$, we need to propose a candidate $\theta_c$ by drawing from the \textit{proposal distribution} $q(\theta_0,\theta_c)$. Then, the probability of acceptance of a new point is given by
+In the \textit{Metropolis Hasting algorithm} (MHA) \cite{metr} it is neccesary to start from a random initial point $\theta_0$, with associated posterior probability $p_0=p(\theta_0,H|D)$. We need to propose a candidate $\theta_c$ by drawing from the \textit{proposal distribution} $q(\theta_0,\theta_c)$. Then, the probability of acceptance of a new point is given by
 \begin{equation}
 p(acceptance)=min\left[1,\frac{p_cq(\theta_c,\theta_0)}{p_0q(\theta_0,\theta_c)}\right]
 \end{equation}
 If the proposal distribution is symmetric, the algorithm is reduced to the \textit{Metropolis algorithm}
-\begin{equation}
-p(acceptance)=min\left[1,\frac{p_c}{p_0}\right]
-\end{equation}
+  \begin{equation}
+  p(acceptance)=min\left[1,\frac{p_c}{p_0}\right]
+  \end{equation}
 In this way the complete algorithm can be expressed following this steps:
 \begin{enumerate}
 \item Choose a random initial condition $\theta_0$ in parameter space and compute the posterior distribution
@@ -547,7 +575,7 @@ To complete the example we show in figure \ref{chain1} the Markov Chain generate
 \label{chain1}
 \end{minipage}\\ $ $ \\
 
-Note: In appendix [A] we computed our MCMC algorithm using an explicit code of the MCMC process. However, in Python there are some modules that can help us to simplify our life. For example PyMC is a Python module that implements statistical models and fitting algorithms, including the MCMC algorithm. We use this module at the end of this section (see appendix [B]), applying the tools learned to a complete work session.
+Note: In appendix [A] we computed our MCMC algorithm using an explicit code of the MCMC process. However, in Python there are some modules that can help us to simplify our life. For example PyMC is a Python module that implements statistical models and fitting algorithms, including the MCMC algorithm. We use this module at the end of this section . Wapplying the tools learned to a complete work session.
 
 \subsubsection{Convergence test} 
 It is clear that we need a test to know when our chain has converged. However we need to be warned that the point in our chain is not in a "false convergent point" or a locally maximum point. In this way we need that our rule takes into account this possible difficulty. The simplest way (the informal way) to know if our chain is converging is running several chains starting with different proposal initial point for the parameter that we are interested about to estimate. Then, if we see, by eye, that all the chains looks to converge to a single region of the possible value for our parameter, we could consider that our chains are converging to that region. 
@@ -609,7 +637,7 @@ In order to fix this issue in a more efficient way, it is recommendable to run a
 \end{equation}
 where $X_i$ is the i-th sample and $X$ is the mean of the samples. This autocorrelation should become smaller as long as $k$ increases (this means that samples start to become independent).\\
 
-\textit{Metropolis Coupled Markov Chain Monte Carlo ($MC^3$)}.- It is easy to see that it could be a little problematic if our Likelihoods possesses local maxima. The $MC^3$ is a modification of the standard MCMC algorithm that consist in running several Markov Chains in parallel to explore the target distribution for different  ``temperatures", and then simplify the way we sample our parameter space and help us to avoid this local maxima. In this little section we exemplify the basic idea of this algorithm following \cite{mcmcmc}. If you are interested in a more extensive explanation of this algorithm, or a modification to make dynamical the temperature of the chains, please consult reference \cite{mcmcmc}.
+\textit{Metropolis Coupled Markov Chain Monte Carlo ($MC^3$)}\textcolor{red}{(No estoy seguro si dejarlo o no)}.- It is easy to see that it could be a little problematic if our Likelihoods possesses local maxima. The $MC^3$ is a modification of the standard MCMC algorithm that consist in running several Markov Chains in parallel to explore the target distribution for different  ``temperatures", and then simplify the way we sample our parameter space and help us to avoid this local maxima. In this little section we exemplify the basic idea of this algorithm following \cite{mcmcmc}. If you are interested in a more extensive explanation of this algorithm, or a modification to make dynamical the temperature of the chains, please consult reference \cite{mcmcmc}.
 
 We consider a tempering version of the posterior distribution $P(\theta,H,T|D)$
 \begin{equation}
@@ -626,10 +654,195 @@ In this way, if a swap is accepted, chains $i$ and $j$ must exchange its current
 We can see that, since the hottest chain $T_{max}$ can access easier to all the modes of $P(\theta,H,T_{max}|D)$, then it can propagate its position to colder chains, to be precises it can propagate its position to the coldest chain $T=1$. At the same time, the position of colder chains can be propagated to hotter chains, allowing them to explore the entire prior volume.   
 \\
 
-\textit{More samples.-}The generation of the elements in a Markov chain is probabilistic by construction and it depends on the algorithm that we are working with. The MHA is the easiest algorithm used in bayesian inference. However there are several other algorithms that can help us to fulfill our mission. For instance, some of the most popular and effective ones apart of the MHA are the Gibbs sampling (GB) (see e.g. \cite{gibbs1,gibbs2}), the Hamiltoninan Monte Carlo (see e.g. \cite{hamiltonian1,Hamiltonian2}) or the Adaptative Metropolis Hasting AMH (see e.g. \cite{importance}).\\
+\textit{\textcolor{blue}{(Monte Carlo Sequential Importance Sampling (MCSIS) `?ser\'ia bueno agregarlo?)}}
+\\ $ $
 
-\textit{Importance Sampling}
-\\ ñ\\
+\textit{More samples.-}The generation of the elements in a Markov chain is probabilistic by construction and it depends on the algorithm that we are working with. The MHA is the easiest algorithm used in bayesian inference. However there are several other algorithms that can help us to fulfill our mission. For instance, some of the most popular and effective ones apart of the MHA are the Gibbs sampling (GB) (see e.g. \cite{gibbs1,gibbs2}), the Hamiltoninan Monte Carlo (see e.g. \cite{hamiltonian1,Hamiltonian2}) or the Adaptative Metropolis Hasting AMH (see e.g. \cite{importance}).\\
+ 
+ \subsection{A first complete session work: Adjusting a straight-line}
+
+In this section we apply all that we have learned until now to the simplest example: adjusting a stright-line. This is, we assume that we have a certain theory where our meassurements should be in a stright line. Then, in order to apply our technics, we simulate several datasets along a given line. In the other side, one of the principal topics that we want to analize is the hyperparameter method and how it works. In this way, we apply our analysis for two different examples. First, we consider that we have 2 datasets took from the same stright-line but with different errors, while in the second case we consider that we have two datasets but now we simulate bout of them from different stright-lines and different errors. In our analysis we used the PyMC3 module [red] implemented in Python. Our complete code can be seen in ref. [ref]. This code is so simple to use and can be modified very easily if a new model should be tested. I recommend you to use the archive called ``new model" where you will find a blanck proyect where you can give to it your data and your model and by running all the notebook, you can obtain all the analysis that we will see in this section. You will find too in the same archive several notes that could help you to programing your model with PyMC3. 
+
+\subsubsection{Case 1}
+
+In this example we start by considering that our measurements for a given theory where a straight-line, $y=a+bx$, is the one that it is expected is given by the data shown in figure \ref{data_1}. We call this case as \textit{Case 1}. This two datasets, D1 and D2, were generated from the line $y=3+2x$ adding a gaussian error to each data in our datasets. For D1 we add an error with a standard desviation $\sigma_1 = 0.3$, while for D2 we add $\sigma_2 = 0.2$. Then, what we would like to estimate are the parameters of the model, i. e. $a$ and $b$. In what follows we will analyze this data with and without the hyperparameter method and discuss in detail our results.
+
+\begin{minipage}{\textwidth}
+\centering
+\includegraphics[height=8cm]{data_1.png}
+\captionof{figure}{\footnotesize{Datasets $D_1$ and $D_2$ meassured by our stright-line theory.}}
+\label{data_1}
+\end{minipage}
+
+\textit{Case without hyperparameters. Model $H_0$.-} Before to make a Bayesian estimation it is necessary to specify our priors. As we have seen a good prior is a non informative one. Suppose we only know the boundary limits for $a$ and $b$ (we can see them by eye in our data). Then we consider the flat priors
+\begin{equation}
+a \propto U[0,5] \ \ \ \text{and} \ \ \ b \propto U[0,3]
+\end{equation}
+where $U[\alpha,\beta]$ are uniform distributions with lower limit $\alpha$ and upper limit $\beta$.
+
+If now we consider that there are values for $a$ and $b$ for which our data matches better, then from [eq] we can write our likelihood as
+\begin{equation}
+L(D;recta)\propto \exp\left[-\sum_d \frac{(y_d-y)^2}{2\sigma_d^2}\right]
+\end{equation}
+where $y_d$ are our data taked from the dataset $D=D_1+D_2$ and $\sigma_d$ its errors.
+
+Now we can generate our MCMC with the MHA. In our analysis we ran 6 chains with 10,000 steps for each one. We ran each chain with a temperature $T=2$ and we thinned them each 50 steps. We can see our results in table \ref{tabla1} and figure \ref{chain}. Notice that there are some regions where the frequency of events in our sample are increased. So we can say that such parameter regions looks to be more likely to match with the data. Additionally we compute the Gelman-Rubin criterion for each variable in order to verify that our results converged. We can see from table \ref{tabla1} that this number is very similar to 1 in such case  implies that our convergence criterion is fulfill.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{||l|l|l|l||} 
+ \hline
+ & \textbf{Promedio} & \textbf{Desv. Est.} & \textbf{Gelman-Rubin} \\ [0.5ex] 
+ \hline\hline
+$a$ & 2.982407 & 0.047978 & 1.000200 \\
+\hline
+$b$ & 1.994251 & 0.013490 & 1.000352\\ [1ex] 
+ \hline
+\end{tabular}
+\caption{\footnotesize{Our means obtained in our Bayesian estimation for model $H_0$. We also calculated the Gelman-Rubin criterion for each parameter.}}
+\label{tabla1}
+\end{table}
+
+\begin{minipage}{\textwidth}
+\centering
+\includegraphics[height=5cm]{chain_new.png}
+\captionof{figure}{\footnotesize{Results of our sample in our Markov chains for model $H_0$.}}
+\label{chain}
+\end{minipage}
+
+Now we need to continue with the autocorrelation plots. As we mentioned, we need that this plots been small as long as k increases in order to consider that our analysis is converging. We can see in figure \ref{autocorr} such plots and notice that our convergence criteria is fulfill.
+
+\begin{minipage}{\textwidth}
+\centering
+\includegraphics[height=5cm]{autocorr_1.png}
+\captionof{figure}{\footnotesize{Autocorrelation plots for model $H_0$.}}
+\label{autocorr}
+\end{minipage}
+\\$ $
+
+Finally in figure \ref{contour_1} we show the typical $1-4\ \sigma$ confidence regions. We also plot in red the real value for our parameters. As we can notice the real value for $a$ and $b$ are inside 1 standard deviation of our estimations by our inferential method. Then, in this Case 1 we can see that the model $H_0$ looks to be a very good estimation procedure.
+
+\begin{minipage}{\textwidth}
+\centering
+\includegraphics[height=5cm]{contour_1.png}
+\captionof{figure}{\footnotesize{Confidence regions for our parameters for model $H_0$.}}
+\label{contour_1}
+\end{minipage}\\ $ $
+
+\textit{Case with hyperparameters. Model $H_1$.-} Now it is time to prove our h. Model $H_1$yperparameter method. In this case our Likelihood can be written from [ref] as
+\begin{equation}
+L(D;\theta,H_1)=\prod_{k=1}^N\frac{2\Gamma(\frac{n_k}{2}+1)}{\pi^{n_k/2}|V_k|^{1/2}}\left[\frac{(y_d-y)^2}{2\sigma_k^2}+2\right]^{-\left(\frac{n_k}{2}+1\right)}
+\end{equation}
+
+Now, similar than in the last procedure we compute the posterior with our flat priors and using 6 chains with 10,000 steps for each one. Our results and autocorrelation plots can be seen in table \ref{tab} and figure \ref{autocorr_2}. Comparing tables \ref{tabla1} and \ref{tab} we can notice that bout procedures looks to be very similar. In fact, we can notice that the confidence regions for bout approximations, fig. \ref{contour_1} and \ref{contour_2}, are similar as well. So, what method is better? By eye we could say that the method with hyperparameters is as good as the one without them, but what we need to compute in order to be sure of it is the ratio $K$ between bout models. We obtained from [eq] 
+\begin{equation}
+K = 3
+\end{equation}
+Then, comparing with table [ref] we can say that the evidence for $H_1$ to be better that $H_0$ is weak, in such case should be better to work with $H_0$ as we explained before.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{||l|l|l|l||} 
+ \hline
+ & \textbf{Promedio} & \textbf{Desv. Est.} & \textbf{Gelman-Rubin} \\ [0.5ex] 
+ \hline\hline
+$a$ & 2.974059 	 & 0.038583 & 1.000229 \\
+\hline
+$b$ & 1.995189 & 0.010611 	 & 1.000044\\ [1ex] 
+ \hline
+\end{tabular}
+\caption{\footnotesize{Our means obtained in our Bayesian estimation for model $H_1$. We also calculated the Gelman-Rubin criterion for each parameter.}}
+\label{tab}
+\end{table}
+
+\begin{minipage}{\textwidth}
+\centering
+\includegraphics[height=5cm]{autocorr_2.png}
+\captionof{figure}{\footnotesize{Autocorrelation plots for model $H_1$.}}
+\label{autocorr_2}
+\end{minipage}
+\\$ $
+
+\begin{minipage}{\textwidth}
+\centering
+\includegraphics[height=5cm]{contour_2.png}
+\captionof{figure}{\footnotesize{Confidence regions for our parameters for model $H_1$.}}
+\label{contour_2}
+\end{minipage}\\ $ $
+
+Finally, in order to exemplify our results, let us plot in figure \ref{stright1} our data with the stright-line inferred by the mean parameters of bout models. As we expected our estimation fit so well  to our data for bout cases.  
+
+\begin{minipage}{\textwidth}
+\centering
+\includegraphics[height=8cm]{stright1.png}
+\captionof{figure}{\footnotesize{Our stright-lines inferred by our procedures confronted with the data.}}
+\label{stright1}
+\end{minipage}
+
+\subsubsection{Case 2}
+
+Now we consider that we have a new set of data and the same theory for the stright-line but suppose that our measurements were kind of distinct. Suppose that we measure the data given in  figure \ref{data_2}. This data corresponds with considering our dataset $D_1$ and changing $D_2$ by 16 new points generated around the line $y=3.5+1.5x$ and with a Gaussian noise with a standard deviation $\sigma = 0.5$. So, our datasets are not auto-consistent between them. Let us make again a parameter estimation for our parameters and look for the differences for bout procedures.
+
+\begin{minipage}{\textwidth}
+\centering
+\includegraphics[height=8cm]{data_2.png}
+\captionof{figure}{\footnotesize{Datasets $D_1$ and $D_2$ meassured by our stright-line theory.}}
+\label{data_2}
+\end{minipage}\\ $ $
+
+\textit{Case without hyperparameters. Model $H_0$.-} We followed the same procedure than in Case 1. We computed our posterior and verified that our results converged with the help of the Gelman-Rubin criterion and the autocorrelation plots. Our results can be seen in table \ref{tab2}. Then we plotted our $1-4 \sigma$ confidence regions in figure \ref{contour_3}. What we can see quickly is that our estimation differs so much of the real parameters in our datasets. Of course this is because we are trying to fit a model with non auto-consistent datasets and then we arrive to incorrect results. Now, let us see what happen in the hyperparameters procedure.    
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{||l|l|l|l||} 
+ \hline
+ & \textbf{Promedio} & \textbf{Desv. Est.} & \textbf{Gelman-Rubin} \\ [0.5ex] 
+ \hline\hline
+$a$ & 3.528359 	 & 0.056511 & 1.000153 \\
+\hline
+$b$ & 1.795464 & 0.014116 	 	 & 1.000393\\ [1ex] 
+ \hline
+\end{tabular}
+\caption{\footnotesize{Our means obtained in our Bayesian estimation for model $H_0$. We also calculated the Gelman-Rubin criterion for each parameter.}}
+\label{tab2}
+\end{table}
+
+\begin{minipage}{\textwidth}
+\centering
+\includegraphics[height=8cm]{contour_3.png}
+\captionof{figure}{\footnotesize{Confidence regions for our parameters for model $H_0$.}}
+\label{contour_3}
+\end{minipage}\\ $ $
+
+\textit{Case with hyperparameters. Model $H_1$.-} We can see in table \ref{tab3} the results of our estimation. In the other side in figure \ref{contour_4} we plotted our posterior. What we can see immediately is that bout approximations are very different for our posterior. While for model $H_0$ we obtained a single region far away of the real values of our data, for model $H_1$ we obtained two locally maximum regions near to our real values for our datasets.  
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{||l|l|l|l||} 
+ \hline
+ & \textbf{Promedio} & \textbf{Desv. Est.} & \textbf{Gelman-Rubin} \\ [0.5ex] 
+ \hline\hline
+$a$ & 3.528359 	 & 0.056511 & 1.000153 \\
+\hline
+$b$ & 1.795464 & 0.014116 	 	 & 1.000393\\ [1ex] 
+ \hline
+\end{tabular}
+\caption{\footnotesize{Our means obtained in our Bayesian estimation for model $H_1$. We also calculated the Gelman-Rubin criterion for each parameter.}}
+\label{tab3}
+\end{table}
+
+\begin{minipage}{\textwidth}
+\centering
+\includegraphics[height=8cm]{contour_4.png}
+\captionof{figure}{\footnotesize{Confidence regions for our parameters for model $H_1$.}}
+\label{contour_4}
+\end{minipage}\\ $ $
+
+Finally we only need to say which method is better. Given the fact that we know \textit{a priori} the real values of our parameters for this example, we could immediately say that the method with hyperparameters is a better approximation than the case without it. However we confirm this assumption by calculating the ratio $K$ between bout models. We obtained
+\begin{equation}
+K = 37
+\end{equation}
+which implies that we have a very strong evidence that $H_1$ is better that $H_0$.
 
 \section{Bayesian statistic and Cosmology}
 
@@ -641,7 +854,7 @@ The simplest way to understand how all these concepts can be useful in cosmology
 
 \subsubsection{What is the model and the theory?}
 
-The standard $\Lambda CDM$ cosmology considers a flat Universe which contains around $\sim 31\%$ of ordinary matter plus dark matter and $\sim 68\%$ of dark energy. In this $\Lambda CDM$ model it is consider that the matter component of the universe follows an equation of state given by $p=0$, while the dark energy is a cosmological constant, i.e. $p=-\rho$. In this way, considering this components, the Universe's dynamics would be given by the Friedmann equation
+The standard $\Lambda CDM$ cosmology considers a flat Universe which contains around $\sim 31\%$ of ordinary matter plus dark matter and $\sim 68\%$ of dark energy. In this $\Lambda CDM$ model it is consider that the matter component of the universe follows an equation of state given by $p=0$, while the dark energy is a cosmological constant, i.e. $p=-\rho$. Considering this components, the Universe's dynamics would be given by the Friedmann equation
 \begin{equation}
 H^2\equiv\left(\frac{\dot a}{a}\right)=H_0^2[\Omega_m(1+z)^3+\Omega_{\Lambda}]
 \end{equation}
@@ -747,7 +960,7 @@ Edit.
 calculations by fast computing machines. J. Chem. Phys.
 21
 , 1087–1092 (1953)
-\bibitem{LicV2} Verde L., astroph/0712.3028 (2007)
+\bibitem{LicV2} Verde L., astroph/0712.3028 (2007)-
 \textit{http://www.behind-the-enemy-lines.com/2008/01/are-you-bayesian-or-frequentist-or.html}
 \bibitem{observ}218.163.109.230 et al. (2004–2014); \textit{Observational cosmology -
 30h course}.
@@ -798,6 +1011,7 @@ ff
 reys H.,
 The Theory of Probability
 , Oxford University Press, 1961.
+\bibitem{importancesampling}Surya T Tokdar and Robert E Kass, Importance sampling: A Review, DOI: 10.1002/wics.56
 
 \end{thebibliography}
 \end{document}
